@@ -126,6 +126,8 @@ If any group of validators successfully violate security, or even attempt to do 
 
 In spite of the strong guarantee, the Tendermint still has excellent performance. In a benchmark of 64 nodes spread across seven data centers on five continents, the Tendermint consensus was able to handle thousands of transactions per second in the case of commercial transactions, with a submission delay of one to two seconds. It's worth noting that, even in harsh confrontational conditions, the verifier can crash or spread maliciously crafted ballots, maintaining the performance of more than a thousand transactions per second.
 
+![Figure of Tendermint throughput performance](https://raw.githubusercontent.com/gnuclear/atom-whitepaper/master/images/tendermint_throughput_blocksize.png)
+
   * **3.1.4 Lightweight**
  
 The main advantage of the Tendermint consensus algorithm is that it simplifies lightweight client security, making it an ideal choice for mobile and Internet of things applications. Although the bitcoin lightweight client must synchronize the blockhead chain and find the chain with the most work, the Tendermint lightweight client only needs to keep up with the changes to the verifier set and then verify the >⅔PreCommits in the latest block to determine the latest status. The compact lightweight client proof also enables communication between blockchains.
