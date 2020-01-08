@@ -74,22 +74,21 @@ It was designed based on the Tendermint consensus engine, achieving interoperabi
 
 Below, we focus on how the Permanent Ecological network can build the technical infrastructure for distributed business applications. If you can read this on GitHub, we're still working on this document. Please check for updates regularly! This Chinese translation was translated by Permanent Ecological community volunteers according to the English version of the white paper.
 
-3.0 Permanent Ecological Overview Of Core Technologies
-==============================
-----------
+## 3.0 Permanent Ecological Overview Of Core Technologies ###########################################################
+
 Permanent Ecological is an independent parallel blockchain network, each of which is supported by the classical BFT consensus algorithm. The Permanent Ecological connection to many other blockchains (or regions) is made possible by novel inter-blockchain communication protocols. It also keeps track of various token types, keeping track of the total number of tokens in each connection area. Tokens can be safely and quickly transferred from one area to another without the need for liquid exchange between areas because all inter-area coin transfers are made by the Permanent Ecological.
 
 This architecture addresses many of the issues facing the blockchain space today, such as application interoperability, scalability, and seamless upgradability. For example, an area from Bitcoind, go-ethereum, CryptoNote, ZCash, or any blockchain system can be inserted with the Permanent Ecological. These areas allow the Permanent Ecological expansion to meet the needs of global trade. Regions are also well suited for distributed exchange and will be supported.
 
 The Permanent Ecological is more than just a single distributed ledger. We are designing protocols for an open distributed ledger network based on cryptographic principles, rational economics, consensus theory, transparency, and accountability that can serve as a new foundation for future business systems.
 
-3.1 Tendermint Consensus Algorithm
-----------------------------------
+### 3.1 Tendermint Consensus Algorithm
+
 Tendermint full block chain is an open source implementation, and can be used for chain or chain alliance, its official position is the engine block chain consensus for developers, with other block chain platform such as Ethernet lane or EOS than Tendermint the biggest characteristic is its differentiated positioning, although contains a complete implementation of block chain, but it is in the form of the SDK will provide, the core functionality for developers to easily customize their proprietary block chain.
 
 The Tendermint is roughly similar to two types of software. The first category includes the use of BFT consensus distributed key-value stores, such as the Zookeeper, etcd and consul. The second category, known as "blockchain technology", consists of cryptocurrencies such as bitcoin and ethereum and alternative distributed ledger designs such as Hyperledger's Burrow.
 
- - **3.1.1 TendermintBFT**
+  * **3.1.1 TendermintBFT**
 
 The Tendermint open source project was launched in 2014, aiming to solve the problems of bitcoin workload proving the speed, scalability and environment of consensus algorithms. By using and improving the proven BFT algorithm developed by MIT in 1988 [20], the Tendermint team was the first to conceptively demonstrate the equity proof cryptocurrency, which addresses the equity abuse suffered by the first generation of certificates, using cryptocurrencies such as NXT and BitShares1.0.
 
@@ -231,9 +230,7 @@ The risk of such a shrunken contract lies with rogue verifiers. Byzantine voting
 
 These problems can be solved by designing fully responsible Bridges. For example, all IBC packets from the distributor and the originating place may require the bridge region validation so that the distributor or originator's bridge can effectively challenge and validate all state transition contracts in the bridge region. The distributors and sources should allow the bridge area verifier to post collateral and should delay the transfer of tokens from the bridge contract (and the collateral is unsecured for a sufficiently long period) to allow any challenge from the independent auditor. We will open the normative design and the realization of this system as the Suggestions for Permanent Ecological improvement in the future, so as to pass the governance system of the Permanent Ecological distributor.
 
-4.0 Permanent Ecological Overview Of Applied Ecology
-==============================
-----------
+## 4.0 Permanent Ecological Overview Of Applied Ecology ###########################################################
 
 > We Have Been Trying To Build The Permanent Ecological Chain From The Four Dimensions Of Block Chain Technology, Business Model, Economic Model And Governance Structure. Business Model And Economic Model Are Also The Core And Key Of The Permanent Ecological Chain. This Paper Is a White Paper On Technology, Which Mainly Elaborates On The Technical Infrastructure Of The Permanent Ecological Public Link.
 
@@ -261,9 +258,7 @@ Block chain autonomous business alliance is the new era of Internet commodity tr
 ----------------------------------
 Banks aim to solve two major problems that cannot be solved by centralized services: unequal financial services; Financial review. Unequal financial services. This refers to individuals' access to financial services such as loans, mortgages and insurance. People who have little or no access to financial services are often called "unbanked." Decentralised financial applications aim to improve the problem and ensure that they are accessible to people; All it takes is a smartphone and an Internet connection. Financial censorship, where governments, financial institutions, or third parties close the accounts of individuals or companies and restrict their trading for specific interests. For example, if a company dares to disagree publicly about government policies, the government can silence the company by restricting its access to basic financial services. Take the bank account service, the company needs to pay employees and other expenses through the bank account, without which the company will go bankrupt. However, the Permanent Ecological decentralized financial Banks break these two problems through effective blockchain application. For example, small and medium-sized enterprises and the real economy chain transformation and chain transformation Token bond transformation, or C.D.P.S mortgage debt position smart contract to achieve the value of the long-term Ecological decentralization of financial Banks.
 
-5.0 Permanent Ecological Summary Of Issue
-==============================
-----------
+## 5.0 Permanent Ecological Summary Of Issue ###########################################################
 
 The Permanent Ecological public chain issues two tokens in total, which is a dual token system. The tokens issued by the main network are PEE; The side chain issue token is PET (stable token).
 
@@ -303,9 +298,7 @@ PEE total circulation for a total of 3,33,0000,000 PEE, triggered by quantum con
 | All The Nodes Reward               | ***10%***      | ***333000000*** |
 | Incentive Mechanism                | ***5%***       | ***166500000*** |
 
-6.0 Permanent Ecological Disclaimer
-==============================
-----------
+## 6.0 Permanent Ecological Disclaimer ###########################################################
 
 6.1 This Article Describes a Project Under Development
 ----------------------------------
@@ -331,36 +324,35 @@ Buying PEE and participating in the Permanent Ecological network comes with grea
 ----------------------------------
 It is important that you consult with an attorney, accountant and/or tax professional, as well as other professional advisers, before deciding whether to purchase a PEE or participate in a Permanent Ecological network program.
 
-7.0 Permanent Ecological Related Literature
-==============================
-----------
-*BTC：[bitcoin.org/bitcoin.pdf][1]
-ETH：[github.com/ethereum/wiki/wiki/White-Paper][2]
-TheDAO：[download.slock.it/public/DAO/WhitePaper.pdf][3]
-BitcoinNG：[arxiv.org/pdf/1510.02037v2.pdf][4]
-Lightning Network：[lightning.network/lightning-network-paper-DRAFT-0.5.pdf][5]
-Tendermint：[github.com/tendermint/tendermint/wiki][6]
-PBFT：[pmg.csail.mit.edu/papers/osdi99.pdf][7]
-BitShares：[bitshares.org/technology/delegated-proof-of-stake-consensus][8]
-Interledger：[interledger.org/rfcs/0001-interledger-architecture][9]
-Side Chain：[blockstream.com/sidechains.pdf][10]
-ABCI：[github.com/tendermint/abci][11]
-DLS：[groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf][12]
-Thin Client Security：[en.bitcoin.it/wiki/Thin_Client_Security][13]
-Ethereum 2.0 Lavenderpaper：[vitalik.ca/files/mauve_paper.html][14]*
+## 7.0 Permanent Ecological Related Literature ###########################################################
+
+* BTC：[bitcoin.org/bitcoin.pdf][1]
+* ETH：[github.com/ethereum/wiki/wiki/White-Paper][2]
+* TheDAO：[download.slock.it/public/DAO/WhitePaper.pdf][3]
+* BitcoinNG：[arxiv.org/pdf/1510.02037v2.pdf][4]
+* Lightning Network：[lightning.network/lightning-network-paper-DRAFT-0.5.pdf][5]
+* Tendermint：[github.com/tendermint/tendermint/wiki][6]
+* PBFT：[pmg.csail.mit.edu/papers/osdi99.pdf][7]
+* BitShares：[bitshares.org/technology/delegated-proof-of-stake-consensus][8]
+* Interledger：[interledger.org/rfcs/0001-interledger-architecture][9]
+* Side Chain：[blockstream.com/sidechains.pdf][10]
+* ABCI：[github.com/tendermint/abci][11]
+* DLS：[groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf][12]
+* Thin Client Security：[en.bitcoin.it/wiki/Thin_Client_Security][13]
+* Ethereum 2.0 Lavenderpaper：[vitalik.ca/files/mauve_paper.html][14]
 
 
-  [1]: https://bitcoin.org/bitcoin.pdf
-  [2]: https://github.com/ethereum/wiki/wiki/White-Paper
-  [3]: https://download.slock.it/public/DAO/WhitePaper.pdf
-  [4]: https://arxiv.org/pdf/1510.02037v2.pdf
-  [5]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
-  [6]: https://github.com/tendermint/tendermint/wiki
-  [7]: https://pmg.csail.mit.edu/papers/osdi99.pdf
-  [8]: https://bitshares.org/technology/delegated-proof-of-stake-consensus
-  [9]: https://interledger.org/rfcs/0001-interledger-architecture
-  [10]: https://blockstream.com/sidechains.pdf
-  [11]: https://github.com/tendermint/abci
-  [12]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
-  [13]: https://en.bitcoin.it/wiki/Thin_Client_Security
-  [14]: https://vitalik.ca/files/mauve_paper.html
+* [1]: https://bitcoin.org/bitcoin.pdf
+* [2]: https://github.com/ethereum/wiki/wiki/White-Paper
+* [3]: https://download.slock.it/public/DAO/WhitePaper.pdf
+* [4]: https://arxiv.org/pdf/1510.02037v2.pdf
+* [5]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
+* [6]: https://github.com/tendermint/tendermint/wiki
+* [7]: https://pmg.csail.mit.edu/papers/osdi99.pdf
+* [8]: https://bitshares.org/technology/delegated-proof-of-stake-consensus
+* [9]: https://interledger.org/rfcs/0001-interledger-architecture
+* [10]: https://blockstream.com/sidechains.pdf
+* [11]: https://github.com/tendermint/abci
+* [12]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+* [13]: https://en.bitcoin.it/wiki/Thin_Client_Security
+* [14]: https://vitalik.ca/files/mauve_paper.html
