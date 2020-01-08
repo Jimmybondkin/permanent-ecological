@@ -4,45 +4,46 @@
 
 Version: 1.3 (091319)
 
+_NOTE: If you can read this on GitHub, then we're still actively developing this
+document.  Please check regularly for updates!_
+
 ## Directory ###########################################################
 
- - 1.0 Preface Abstract
- - 2.0 Permanent Ecological Overview
- - 3.0 Overview Of The Core Technology Of Permanent Ecological
-  - 3.1 Tendermint Consensus Algorithm
-  - 3.1.1 Tendermintbft
-  - 3.1.2 The Verifier
-  - 3.1.3 Consensus Agreement
-  - 3.1.4 Lightweight
-  - 3.1.5 ABCI
-  - 3.2 Constitutional System
-  - 3.3 Regions And Dispersers
-  - 3.4 Block Chain Communication -Ibc
-  - 3.5 Distributed Exchange
-  - 3.6 Ethereum Zoom
-  - 3.7 Multi-Application Integration
-  - 3.8 Network Partition Mitigation
-  - 3.9 Bridge To Other Cryptocurrencies
-  - 3.9.1 The Token Will Be Sent To The Permanent Ecological Distributor
-  - 3.9.2 Extract The Token From The Permanent Ecological Distributor
-  - 3.9.3 Overall Responsibility System In Bridge Area
- - 4.0 Introduction To The Permanent Ecological Application
-  - 4.1 Cloud Computing Power Light Client
-  - 4.2 Distributed Digital Currency Exchange
-  - 4.3 Multi-Chain Blockchain Wallet
-  - 4.4 Autonomous Business Alliance
-  - 4.5 Decentralized Financial Banking
- - 5.0 Permanent Ecological Release Overview
-  - 5.1 Basic Parameters Of Pee Token
-  - 5.2 Basic Parameters Of Pet Token
-  - 5.3 Initial Allocation Information Of Pee Tokens
- - 6.0 Permanent Ecological Disclaimer
- - 7.0 Permanent Ecological Relevant Appendices And Literature
+  * 1.0 Preface Abstract
+  * 2.0 Permanent Ecological Overview
+  * 3.0 Overview Of The Core Technology Of Permanent Ecological
+    * 3.1 Tendermint Consensus Algorithm
+      * 3.1.1 Tendermintbft
+      * 3.1.2 The Verifier
+      * 3.1.3 Consensus Agreement
+      * 3.1.4 Lightweight
+      * 3.1.5 ABCI
+    * 3.2 Constitutional System
+    * 3.3 Regions And Dispersers
+    * 3.4 Block Chain Communication -Ibc
+    * 3.5 Distributed Exchange
+    * 3.6 Ethereum Zoom
+    * 3.7 Multi-Application Integration
+    * 3.8 Network Partition Mitigation
+    * 3.9 Bridge To Other Cryptocurrencies
+      * 3.9.1 The Token Will Be Sent To The Permanent Ecological Distributor
+      * 3.9.2 Extract The Token From The Permanent Ecological Distributor
+      * 3.9.3 Overall Responsibility System In Bridge Area
+  * 4.0 Introduction To The Permanent Ecological Application
+    * 4.1 Cloud Computing Power Light Client
+    * 4.2 Distributed Digital Currency Exchange
+    * 4.3 Multi-Chain Blockchain Wallet
+    * 4.4 Autonomous Business Alliance
+    * 4.5 Decentralized Financial Banking
+  * 5.0 Permanent Ecological Release Overview
+    * 5.1 Basic Parameters Of Pee Token
+    * 5.2 Basic Parameters Of Pet Token
+    * 5.3 Initial Allocation Information Of Pee Tokens
+  * 6.0 Permanent Ecological Disclaimer
+  * 7.0 Permanent Ecological Relevant Appendices And Literature
  
 
-1.0 Introduction In This Paper
-==============================
-----------
+## 1.0 Introduction In This Paper ###########################################################
 
 > Permanent Ecological Changes Will Shape The Future Of Business-Pee Global Financial Autonomy
 
