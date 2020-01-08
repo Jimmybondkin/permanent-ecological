@@ -104,7 +104,7 @@ The Tendermint guarantees that it will never violate its security, that is, the 
 
 The effective security guarantees of the Tendermint BFT consensus, as well as the collateral deposits of the stakeholders (verifiers and principals), provide provable and quantifiable security for the nodes and light customers.
 
- - **3.1.2 The Verifier**
+  * **3.1.2 The Verifier**
  
 In the Tendermint, each node has the same weight, and the nodes have non-negative voting rights, while the nodes with positive voting rights are called validators. The verifier signs or votes on the consensus agreement by broadcasting the password to reach agreement on the next block.
 
@@ -114,7 +114,7 @@ For some reason, the verifier may fail to commit a block: the current proposer m
 
 Note: scores such as ⅔ and like represent the total voting power score, not the total number of verifiers, unless all verifiers have the same weight. >⅔ means "greater than ⅔", and ≥⅓ means "at least ⅓".
 
- - **3.1.3 Consensus Agreement**
+  * **3.1.3 Consensus Agreement**
  
 In terms of technology, the Tendermint prides itself on its consensus algorithm -- the world's first Byzantine fault-tolerant algorithm that can be applied to a public chain. Tendermint is famous for its simplicity, high performance and bifurcated sense of responsibility. The protocol requires a fixed set of known validators, each identified by its public key. The validator tries to agree on one block at a time, one of which is a list of transactions. A full vote on whether to reach a consensus. Each turn has a round leader or proposer proposing a block. The verifier will then vote in stages on whether to accept the proposed block or proceed to the next round. The proposers of the round are determined from an ordered list of verifiers in proportion to their voting power.
 
@@ -126,11 +126,11 @@ If any group of validators successfully violate security, or even attempt to do 
 
 In spite of the strong guarantee, the Tendermint still has excellent performance. In a benchmark of 64 nodes spread across seven data centers on five continents, the Tendermint consensus was able to handle thousands of transactions per second in the case of commercial transactions, with a submission delay of one to two seconds. It's worth noting that, even in harsh confrontational conditions, the verifier can crash or spread maliciously crafted ballots, maintaining the performance of more than a thousand transactions per second.
 
- - **3.1.4 Lightweight**
+  * **3.1.4 Lightweight**
  
 The main advantage of the Tendermint consensus algorithm is that it simplifies lightweight client security, making it an ideal choice for mobile and Internet of things applications. Although the bitcoin lightweight client must synchronize the blockhead chain and find the chain with the most work, the Tendermint lightweight client only needs to keep up with the changes to the verifier set and then verify the >⅔PreCommits in the latest block to determine the latest status. The compact lightweight client proof also enables communication between blockchains.
 
- - **3.1.5 ABCI**
+  * **3.1.5 ABCI**
  
 The Tendermint consensus algorithm is implemented in a program called Tendermint Core. Tendermint Core is an app-independent "consensus engine" that turns any deterministic black box application into a distributed, replicated blockchain. The Tendermint Core connects to the blockchain application via the application block link port (ABCI). Thus, ABCI allows block chain applications to be programmed in any language, not just in a programming language written by the consensus engine. In addition, ABCI makes it easy to swap out the consensus layer of any existing blockchain stack.
 
@@ -154,8 +154,8 @@ The Commit message is used to calculate a cryptographic commitment for the curre
 
 An application may have multiple ABCI socket connections. The Tendermint Core created three ABCI connections for the application: one for transaction validation when the memory pool is broadcasting, one for running the consensus engine when submitting blocks, and one for checking the status of the application.
 
-3.2 Constitutional System
-----------------------------------
+### 3.2 Constitutional System
+
 The distributed public ledger shall have constitutional and governance systems. Bitcoin relies on the bitcoin foundation and mining to coordinate the upgrade, but it is a slow process. Ethereum split into ETH and ETC after bifurcating to resolve TheDAO's hacking, largely because there was no prior social contract or decision-making mechanism.
 
 Permanent Ecological verifiers and representatives can vote on proposals that automatically change the system's preset parameters (for example, limit gas restrictions), coordinate upgrades, and vote on human-readable constitutional amendments governing the policy. The center of the universe. The constitution allows stakeholders to work together on issues such as theft and errors (such as the TheDAO incident) so that problems can be solved more quickly and cleanly.
@@ -164,22 +164,22 @@ Each region could also have its own constitution and governance mechanisms. For 
 
 By achieving interoperability between different policy areas, the Permanent Ecological network provides users with maximum freedom and the potential for unlicensed experimentation.
 
-3.3 Zones And Dispersers
-----------------------------------
+### 3.3 Zones And Dispersers
+
 The Permanent Ecological is a network of many blockchains supported by the Tendermint. Existing proposals aim to create a "single blockchain" with an overall global order of transactions, while the Permanent Ecological allows many blockchains to run concurrently while maintaining interoperability. Here, we describe a new model of decentralization and scalability.
 
 Permanent Ecological Disperser management by many independent block chain, known as the "Zones" (sometimes called "fragments", reference database extensions technology called "debris"). The continuous flow of the latest block lift from the regions published on the disperser enables the disperser to keep up with the state of each region. Again, each region is synchronized with the state of the disperser (but not indirectly through the disperser). The packets are then passed from one region to another by publishing Merkle proofs as evidence of the sending and receiving of information. This mechanism is called block chain to block communication, or IBC.
 
-3.4 Block Chain Communication -IBC
-----------------------------------
+### 3.4 Block Chain Communication -IBC
+
 Now let's look at how the disperser communicates with the region. Chain, for example, if there are three blocks "Zone1", "Zone2" and "Disperser", we hope the Zone1 packets sent to "Zone2", and through the "Disperser". To move packets from one block chain to another, a certificate is published on the receiving chain. Evidence suggests that the sending chain publishes packets of so-called destinations. In order for the receiving chain to be able to check this proof, it must be able to keep up with the sender's bulk. This mechanism is similar to that used by side chains, which require two interacting chains to know each other through two-way presence to prove the datagram (transaction) flow.
 
 Naturally, there are two types of transactions that define the IBC protocol: an IBCBlockCommitTx transaction that allows the block chain to prove its most recent hash value to any observer; Another IBCPacketTx transaction allows the blockchain to prove to any observer that a given packet is indeed published by the sender's application by Merkle's proof of the nearest block hash.
 
 By splitting the IBC mechanism into two separate transactions, we allow the capital market mechanism of the receiving chain to determine the submitted (or acknowledged) packets, while allowing the sending chain complete freedom to allow as many outbound packets as possible.
 
-3.5 Distributed Switching
-----------------------------------
+### 3.5 Distributed Switching
+
 Just as bitcoin improves security by becoming a distributed, massively copied ledger, we can reduce the vulnerability of exchanges to external and internal hackers by running them on the blockchain. We call this a distributed exchange.
 
 oday, the cryptocurrency community's so-called decentralized exchanges are based on something called "atomic cross-chain" (AXC) trading, defined as quantum cross-chain [QXC]. With QXC transactions, two users on two different chains can make two transfer transactions committed together in two ledgers, or not committed at all (that is, quantum). For example, even if bitcoin and ethereum are not connected to each other, two users can use QXC transactions to exchange bitcoins for ethereum (or any two tokens in two different ledgers). The advantage of running exchanges on QXC transactions is that users do not need to trust each other or trade match services. The downside is that both parties must be online to trade.
@@ -190,25 +190,25 @@ The Tendermint consensus offers other benefits of faster transaction submission.
 
 Given the current status of cryptocurrency exchange, an important application of Permanent Ecological is distributed exchange (aka the Permanent Ecological DEX). Transaction throughput and commit latency are comparable to centralized exchange. Traders can submit limit orders that can be executed without both parties being online. With the help of the Tendermint, the Permanent Ecological hub and IBC, traders can quickly move money in and out of the exchange to other areas.
 
-3.6 Ethereum Zoom
-----------------------------------
+### 3.6 Ethereum Zoom
+
 Resolving the expansion issue is an open question for ethereum. Currently, ethereum nodes process each single transaction and store all states. Since the Tendermint can demonstrate faster block submission than ethereum's workload, the EVM area supported by the Tendermint consensus and running on the bridge ether can provide higher performance for ethereum's blockchain. In addition, although the scatterer and IBC packet mechanisms themselves do not allow arbitrary execution of contract logic, they can be used to coordinate token movement between ethereum contracts running on different regions, providing the basis for toker-centric ethereum scaling through fragmentation.
 
-3.7 Multi-Application Integration
-----------------------------------
+### 3.7 Multi-Application Integration
+
 The Permanent Ecological region runs any application logic that is defined at the beginning of the region's life cycle and may be updated over time through governance. This flexibility allows the Permanent Ecological region to act as a bridge to other cryptocurrencies, such as ethereum or bitcoin, and also allows those blockchain derivatives that use the same code base but have a different set of validators and initial distribution. This allows a number of existing cryptocurrency frameworks (e.g., etim, Zerocash, bitcoin, CryptoNote, etc.) to be used in conjunction with Tendermint Core, which is a high performance consensus engine that can be used on a generic network, providing a huge opportunity for cross-platform interoperability. In addition, as a multi-asset block chain, a single transaction may contain multiple inputs and outputs, each of which can be any token type, so that the Permanent Ecological can be directly used as a platform for decentralized transactions, although it is assumed that the order is matched through other platforms. Alternatively, the area can be used as a distributed fault-tolerant exchange (with an order book), which can be a serious improvement on the existing centralized cryptocurrency exchange, which is often hacked over time.
 
 Area can also be used as a support block chain version of enterprise and government system, which is traditionally organized by an organization or group of running some of the specific services as ABCI applications that run on an area, which makes it can inherit Permanent Ecological public network security and interoperability, without sacrificing control of the basic services. Thus, Permanent Ecological may provide the best of both worlds for organizations that want to take advantage of blockchain technology but give up control entirely to distributed third parties.
 
-3.8 Network Partition Mitigation
-----------------------------------
+### 3.8 Network Partition Mitigation
+
 It has been claimed that a major problem with consensus algorithms that favor consistency, such as the Tendermint, is that any network partition that results in no voting rights greater than (for example, ≥offline) will completely terminate the consensus. The Permanent Ecological system can alleviate this problem by using global hubs with regional autonomous regions, where voting rights are allocated for each region based on a common geographical area. For example, a common example might be for cities or regions to operate their own areas while sharing a common distributor (such as a Permanent Ecological distributor), thus sustaining municipal activities when the distributor is stopped due to temporary network partitioning. Note that this allows real geological, political, and network topological characteristics to be considered when designing robust joint fault-tolerant systems.
 
-3.9 Bridge To Other Cryptocurrencies
-----------------------------------
+### 3.9 Bridge To Other Cryptocurrencies
+
 A privileged area can act as a source for a bridge token for another cryptocurrency. Bridges are similar to the relationship between the Permanent Ecological hub and the region. Both must follow the latest block of the other to verify that the token has been moved from one to the other. The bridge area on the Permanent Ecological network keeps pace with hubs and other cryptocurrencies. The logic of indirectly allowing the disperser through the bridging area is kept simple and independent of other blockchain consensus strategies (such as bitcoin workload proof mining).
 
- - **3.9.1 The Token Is Sent To The Permanent Ecological Distributor**
+  * **3.9.1 The Token Is Sent To The Permanent Ecological Distributor**
 
 Each bridge validator will run a blockchain with the Tendermint, a special ABCI bridge application, and a full node of the "origin" blockchain.
 
@@ -218,13 +218,13 @@ In the case of ethereum, the bridge area can share the same set of validators as
 
 In the case of bitcoin, the concept is similar, except that each UTXO will be controlled by threshold multi-signature P2SH releases, rather than a single bridge contract. Due to the limitations of the P2SH system, the signer cannot be the same as the disperser validator set.
 
- - **3.9.2 Extract The Token From The Permanent Ecological Distributor**
+  * **3.9.2 Extract The Token From The Permanent Ecological Distributor**
 
 Ethereum on the bridge area (" bridging ethereum ") can be transmitted back and forth between the distributors and then destroyed by transactions that send it to specific withdrawal addresses on ethereum. The IBC packet can be used to prove that the transaction occurred in the bridge area and then published into the ethereum bridge contract to allow the ethereum currency to be extracted.
 
 In the case of bitcoin, the restricted scripting system makes it difficult to mirror the IBC coin transfer mechanism. Each UTXO has its own independent distribution, so each UTXO must be migrated to the new UTXO when the set of bitcoin managed signers changes. One solution is to compress and decompress the UTXO set as needed to reduce the total number of UTXO.
 
- - **3.9.3 Overall Accountability In The Bridge Area**
+  * **3.9.3 Overall Accountability In The Bridge Area**
  
 The risk of such a shrunken contract lies with rogue verifiers. Byzantine voting power ≥⅓ May cause the fork to withdraw the etheric COINS from the bridge contract over ethereum while keeping the etheric over the bridge area. Worse, the >⅔ Byzantine voting rights could deviate from the original bridge logic of the bridge belt, thereby stealing the ether outright from those who sent it to the bridge contract.
 
@@ -234,36 +234,35 @@ These problems can be solved by designing fully responsible Bridges. For example
 
 > We Have Been Trying To Build The Permanent Ecological Chain From The Four Dimensions Of Block Chain Technology, Business Model, Economic Model And Governance Structure. Business Model And Economic Model Are Also The Core And Key Of The Permanent Ecological Chain. This Paper Is a White Paper On Technology, Which Mainly Elaborates On The Technical Infrastructure Of The Permanent Ecological Public Link.
 
-4.1 CloudHash&Light Client 
-----------------------------------
+### 4.1 CloudHash&Light Client 
+
 We provide users with the cloud to calculate force light Client [CloudHash&Light Client], does not need to be synchronized Permanent Ecological data blocks all node, just change of synchronous validator set and verify the latest blocks of > two-thirds PreCommits can determine the latest status. This simplification makes it an ideal choice for mobile and Internet of things use cases. Users can directly use the light client of the Permanent Ecological cloud to set up nodes, and the light client supports starting the mining mode at present (there is a limit on the number and opening time of the service of the light client of mining mode at present, and the end is dominated by the latest Permanent Ecological dynamic). Each light client is only allowed to set up one mining node for mining, and must log on the Permanent Ecological cloud every day to ensure that the node network data is synchronized to the latest state and the node access is normal. The cloud power light client also supports DAPP, an intelligent contract distributed by the Permanent Ecological network, to ensure the comprehensive nature of the Permanent Ecological application.
 
-4.2 Distributed Digital Currency Exchanges
-----------------------------------
+### 4.2 Distributed Digital Currency Exchanges
+
 The Permanent Ecological public chain is building the emerging open financial ecosystem to build the liquidity infrastructure. The network is a binding block chain of equity proof based on the Tendermint consensus.
 
 The base state machine is responsible for executing a simple set of access control rules and a basic order booking process. The network utilizes the Shared security model, in which all the mortgage and token based logic is implemented on the Permanent Ecological basis. This model provides certainty for specific changes in the Permanent Ecological system by utilizing the Tendermint, thus providing one-way communication and inspection between the two networks. A dynamic set of independent validators and voting token holders support core protocol and relay network. Through local token systems and simple economic mechanisms, network validators, users, and voters are coordinated and motivated to achieve common goals of network security and value.
 
 The Permanent Ecological chain has also developed an unmanaged request quotation system, whose unique interaction model makes it one of the most competitive DEX models. Because the current DEX architecture makes access priority too high due to high latency and interaction scenarios, this is a price disadvantage. However, the PE quotation system introduced the inquiry model, which forced the signatory of the market maker agreement to provide the quotation in the form of order and required the maker to implement the commitment. The above protocols can provide users with a safe, fast and convenient distributed financial system.
 
-4.3 Multi-Chain BlockChain Wallet
-----------------------------------
+### 4.3 Multi-Chain BlockChain Wallet
+
 The Permanent Ecological wallet is HD wallet managed with a mnemonic. HD wallet is now the "premium" deterministic wallet. Based on BIP44 protocol implementation (currently commonly used BIP39, BIP44 protocol). BIP44 protocol defined, HD purse with tree structure derived keys (private and public keys), which means that the seed to generate the private key (or master key), then through the private key, you can derive a series of private key, and each child private key can be derived from a series of key sun again, and so on, can be derived. The process of deriving the child private key from the primary private key cannot be reversed. The child private key cannot derive the parent private key upward, nor can the private key of the same level be derived horizontally. Therefore, it can manage the private key in a very secure layer and effectively protect the financial privacy. Users can easily manage multiple cryptographic assets with a single wallet. Only need to back up the seed, do not need to back up the private key, to provide users with great convenience, reduce the burden of managing multi-chain assets. Light wallet currently only supports access and transaction verification.
 
-4.4 Autonomous Business Alliance
-----------------------------------
+### 4.4 Autonomous Business Alliance
+
 Block chain autonomous business alliance is the new era of Internet commodity trade in the future, it will be a better choice. In today's business form, the global small and medium-sized enterprises and the real economy has been facing a severe test, how to block chain technology is helping them get through this cold winter became the topic under discussion, extremely capital chain chain scission, unsalable inventory products, product research and development problems such as low energy efficiency, product quality traceability are still with their development. With the increasing maturity of block chain technology, the features of distributed storage, point-to-point transmission and consensus mechanism provide a feasible way to solve these pain points. The Permanent Ecological pattern provides a new model of autonomous business alliance for the future business pattern. The supply chain management and information asymmetry brought by the centralization of e-commerce have been restricting the further development of commodity trade. The Permanent Ecological pattern gradually changes the existing business pattern by breaking this bottleneck.
 
-4.5 Decentralized Financial Banking
-----------------------------------
+### 4.5 Decentralized Financial Banking
+
 Banks aim to solve two major problems that cannot be solved by centralized services: unequal financial services; Financial review. Unequal financial services. This refers to individuals' access to financial services such as loans, mortgages and insurance. People who have little or no access to financial services are often called "unbanked." Decentralised financial applications aim to improve the problem and ensure that they are accessible to people; All it takes is a smartphone and an Internet connection. Financial censorship, where governments, financial institutions, or third parties close the accounts of individuals or companies and restrict their trading for specific interests. For example, if a company dares to disagree publicly about government policies, the government can silence the company by restricting its access to basic financial services. Take the bank account service, the company needs to pay employees and other expenses through the bank account, without which the company will go bankrupt. However, the Permanent Ecological decentralized financial Banks break these two problems through effective blockchain application. For example, small and medium-sized enterprises and the real economy chain transformation and chain transformation Token bond transformation, or C.D.P.S mortgage debt position smart contract to achieve the value of the long-term Ecological decentralization of financial Banks.
 
 ## 5.0 Permanent Ecological Summary Of Issue ###########################################################
 
 The Permanent Ecological public chain issues two tokens in total, which is a dual token system. The tokens issued by the main network are PEE; The side chain issue token is PET (stable token).
 
-5.1 Basic Parameters Of PEE Token
-----------------------------------
+### 5.1 Basic Parameters Of PEE Token
 
 | Total Circulation               | ***3,33,0000,000 PEE***     |
 | -------------- | ------------------------------- |
@@ -273,16 +272,14 @@ The Permanent Ecological public chain issues two tokens in total, which is a dua
 | Production Cycle                | ***2635200 Blocks***        |
 | Cuts                            | ***3%***                    |
 
- 5.2 Basic Parameters Of PET Token
-----------------------------------
+### 5.2 Basic Parameters Of PET Token
 
 | Total Circulation     | ***56,0000,000 PET*** |
 | ------------ | -------------------- |
 | Block Out Interval                | ***21 Seconds***      |
 | Out Of The Block Reward Amount    | ***2 PET***           |
 
-  5.3 Initial Allocation Information For PEE Tokens
-----------------------------------
+### 5.3 Initial Allocation Information For PEE Tokens
 
 PEE total circulation for a total of 3,33,0000,000 PEE, triggered by quantum content marketing, light cloud to calculate force clients to dig version 1.0, the cloud to calculate force light client version 2.0, all nodes mining and mining, technical maintenance, Ecological contribution, community maintenance, all nodes of reward and incentive mechanism, because the Permanent Ecological USES is POS mechanism, in the creation stage triggered PEE will be allocated in the center of the several sections to node, triggered by intelligent contract, and all data will be made public audit in the blocks in the browser. And it is regulated and supervised by Permanent Ecological AI.
 
@@ -300,28 +297,28 @@ PEE total circulation for a total of 3,33,0000,000 PEE, triggered by quantum con
 
 ## 6.0 Permanent Ecological Disclaimer ###########################################################
 
-6.1 This Article Describes a Project Under Development
-----------------------------------
+### 6.1 This Article Describes a Project Under Development
+
 This white paper and related documents are used for the development and application of the Permanent Ecological network. For information dissemination purposes only and subject to change.
 
 The Permanent Ecological network envisaged in this paper is under development and will be constantly updated, including but not limited to key governance and key technologies. The development of a test platform (software) and technology using the Permanent Ecological network or associated test platform (software) may not achieve or fully achieve the goals described in this white paper.
 
 If the Permanent Ecological is accomplished, it may not be the same as described in this article. Nothing in this article represents or warrants the success or reasonableness of any future plans, projections or prospects, and nothing in this article shall be construed as a promise or representation of the future.
 
-6.2 Not An Offer For Regulatory Products
-----------------------------------
+### 6.2 Not An Offer For Regulatory Products
+
 Permanent Ecological does not represent any product under judicial supervision. This article does not constitute an offer or invitation to make an inquiry for any regulated product, nor does it constitute any promotion, invitation or inquiry for investment purposes. The terms of purchase are not documents providing financial services or prospectuses of any kind.
 
-6.3 Is Not Recommended
-----------------------------------
+### 6.3 Is Not Recommended
+
 This white paper does not constitute any purchase advice for PEE. Please do not rely on this white paper to make any contract or purchase decisions.
 
-6.4 Risk Warning
-----------------------------------
+### 6.4 Risk Warning
+
 Buying PEE and participating in the Permanent Ecological network comes with great risks. Before buying a PEE, you should carefully evaluate and consider the risks.
 
-6.5 You Must Obtain All Necessary Professional Advice
-----------------------------------
+### 6.5 You Must Obtain All Necessary Professional Advice
+
 It is important that you consult with an attorney, accountant and/or tax professional, as well as other professional advisers, before deciding whether to purchase a PEE or participate in a Permanent Ecological network program.
 
 ## 7.0 Permanent Ecological Related Literature ###########################################################
@@ -342,17 +339,17 @@ It is important that you consult with an attorney, accountant and/or tax profess
 * Ethereum 2.0 Lavenderpaper：[vitalik.ca/files/mauve_paper.html][14]
 
 
-* [1]: https://bitcoin.org/bitcoin.pdf
-* [2]: https://github.com/ethereum/wiki/wiki/White-Paper
-* [3]: https://download.slock.it/public/DAO/WhitePaper.pdf
-* [4]: https://arxiv.org/pdf/1510.02037v2.pdf
-* [5]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
-* [6]: https://github.com/tendermint/tendermint/wiki
-* [7]: https://pmg.csail.mit.edu/papers/osdi99.pdf
-* [8]: https://bitshares.org/technology/delegated-proof-of-stake-consensus
-* [9]: https://interledger.org/rfcs/0001-interledger-architecture
-* [10]: https://blockstream.com/sidechains.pdf
-* [11]: https://github.com/tendermint/abci
-* [12]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
-* [13]: https://en.bitcoin.it/wiki/Thin_Client_Security
-* [14]: https://vitalik.ca/files/mauve_paper.html
+[1]: https://bitcoin.org/bitcoin.pdf
+[2]: https://github.com/ethereum/wiki/wiki/White-Paper
+[3]: https://download.slock.it/public/DAO/WhitePaper.pdf
+[4]: https://arxiv.org/pdf/1510.02037v2.pdf
+[5]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
+[6]: https://github.com/tendermint/tendermint/wiki
+[7]: https://pmg.csail.mit.edu/papers/osdi99.pdf
+[8]: https://bitshares.org/technology/delegated-proof-of-stake-consensus
+[9]: https://interledger.org/rfcs/0001-interledger-architecture
+[10]: https://blockstream.com/sidechains.pdf
+[11]: https://github.com/tendermint/abci
+[12]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+[13]: https://en.bitcoin.it/wiki/Thin_Client_Security
+[14]: https://vitalik.ca/files/mauve_paper.html
