@@ -1,3 +1,6 @@
+﻿
+
+
 Permanent Ecological WHITEPAPER
 ==========
 ----------
@@ -40,7 +43,7 @@ Directory
   - 5.3 Initial Allocation Information Of Pee Tokens
  - 6.0 Permanent Ecological Disclaimer
  - 7.0 Permanent Ecological Relevant Appendices And Literature
-
+ 
 
 1.0 Introduction In This Paper
 ==============================
@@ -108,7 +111,7 @@ The Tendermint guarantees that it will never violate its security, that is, the 
 The effective security guarantees of the Tendermint BFT consensus, as well as the collateral deposits of the stakeholders (verifiers and principals), provide provable and quantifiable security for the nodes and light customers.
 
  - **3.1.2 The Verifier**
-
+ 
 In the Tendermint, each node has the same weight, and the nodes have non-negative voting rights, while the nodes with positive voting rights are called validators. The verifier signs or votes on the consensus agreement by broadcasting the password to reach agreement on the next block.
 
 The participants in the agreement are called "validators." They take turns proposing blocks and voting on them. Blocks are committed to the chain, with each block occupying a "height." The commit block may fail, and if it fails, the protocol starts the next commit, and a new verifier continues to commit the block at that height. To successfully commit a block, there are two phases of voting: "pre-vote" and "pre-commit".In the same round of submission, the same block can only be submitted to the chain if more than 2/3 validators precommit the same block.
@@ -118,7 +121,7 @@ For some reason, the verifier may fail to commit a block: the current proposer m
 Note: scores such as ⅔ and like represent the total voting power score, not the total number of verifiers, unless all verifiers have the same weight. >⅔ means "greater than ⅔", and ≥⅓ means "at least ⅓".
 
  - **3.1.3 Consensus Agreement**
-
+ 
 In terms of technology, the Tendermint prides itself on its consensus algorithm -- the world's first Byzantine fault-tolerant algorithm that can be applied to a public chain. Tendermint is famous for its simplicity, high performance and bifurcated sense of responsibility. The protocol requires a fixed set of known validators, each identified by its public key. The validator tries to agree on one block at a time, one of which is a list of transactions. A full vote on whether to reach a consensus. Each turn has a round leader or proposer proposing a block. The verifier will then vote in stages on whether to accept the proposed block or proceed to the next round. The proposers of the round are determined from an ordered list of verifiers in proportion to their voting power.
 
 The security of the Tendermint stems from its use of optimal Byzantine fault tolerance through super majority voting (> a) and locking mechanisms. Together they ensure that:
@@ -130,11 +133,11 @@ If any group of validators successfully violate security, or even attempt to do 
 In spite of the strong guarantee, the Tendermint still has excellent performance. In a benchmark of 64 nodes spread across seven data centers on five continents, the Tendermint consensus was able to handle thousands of transactions per second in the case of commercial transactions, with a submission delay of one to two seconds. It's worth noting that, even in harsh confrontational conditions, the verifier can crash or spread maliciously crafted ballots, maintaining the performance of more than a thousand transactions per second.
 
  - **3.1.4 Lightweight**
-
+ 
 The main advantage of the Tendermint consensus algorithm is that it simplifies lightweight client security, making it an ideal choice for mobile and Internet of things applications. Although the bitcoin lightweight client must synchronize the blockhead chain and find the chain with the most work, the Tendermint lightweight client only needs to keep up with the changes to the verifier set and then verify the >⅔PreCommits in the latest block to determine the latest status. The compact lightweight client proof also enables communication between blockchains.
 
  - **3.1.5 ABCI**
-
+ 
 The Tendermint consensus algorithm is implemented in a program called Tendermint Core. Tendermint Core is an app-independent "consensus engine" that turns any deterministic black box application into a distributed, replicated blockchain. The Tendermint Core connects to the blockchain application via the application block link port (ABCI). Thus, ABCI allows block chain applications to be programmed in any language, not just in a programming language written by the consensus engine. In addition, ABCI makes it easy to swap out the consensus layer of any existing blockchain stack.
 
 ABCI allows Byzantine fault-tolerant replication of applications that can be written in any programming language. Tendermint Core (" consensus engine ") communicates with applications through an abci-compliant socket protocol. Take a familiar example, bitcoin. Bitcoin is a cryptocurrency blockchain in which each node maintains a fully audited UTXO database. If someone wants to create a bitcoin-like system on top of ABCI,
@@ -228,7 +231,7 @@ Ethereum on the bridge area (" bridging ethereum ") can be transmitted back and 
 In the case of bitcoin, the restricted scripting system makes it difficult to mirror the IBC coin transfer mechanism. Each UTXO has its own independent distribution, so each UTXO must be migrated to the new UTXO when the set of bitcoin managed signers changes. One solution is to compress and decompress the UTXO set as needed to reduce the total number of UTXO.
 
  - **3.9.3 Overall Accountability In The Bridge Area**
-
+ 
 The risk of such a shrunken contract lies with rogue verifiers. Byzantine voting power ≥⅓ May cause the fork to withdraw the etheric COINS from the bridge contract over ethereum while keeping the etheric over the bridge area. Worse, the >⅔ Byzantine voting rights could deviate from the original bridge logic of the bridge belt, thereby stealing the ether outright from those who sent it to the bridge contract.
 
 These problems can be solved by designing fully responsible Bridges. For example, all IBC packets from the distributor and the originating place may require the bridge region validation so that the distributor or originator's bridge can effectively challenge and validate all state transition contracts in the bridge region. The distributors and sources should allow the bridge area verifier to post collateral and should delay the transfer of tokens from the bridge contract (and the collateral is unsecured for a sufficiently long period) to allow any challenge from the independent auditor. We will open the normative design and the realization of this system as the Suggestions for Permanent Ecological improvement in the future, so as to pass the governance system of the Permanent Ecological distributor.
@@ -272,38 +275,38 @@ The Permanent Ecological public chain issues two tokens in total, which is a dua
 5.1 Basic Parameters Of PEE Token
 ----------------------------------
 
-| Total Circulation              | ***3,33,0000,000 PEE***                     |
-| ------------------------------ | ------------------------------------------- |
-| Method Of Proof Pf Interest    | ***POS is based on the Tendermint engine*** |
-| Block Out Interval             | ***6 Seconds***                             |
-| Out Of The Block Reward Amount | ***40 PEE***                                |
-| Production Cycle               | ***2635200 Blocks***                        |
-| Cuts                           | ***3%***                                    |
+| Total Circulation               | ***3,33,0000,000 PEE***     |
+| -------------- | ------------------------------- |
+| Method Of Proof Pf Interest     | ***POS is based on the Tendermint engine*** |
+| Block Out Interval              | ***6 Seconds***             |
+| Out Of The Block Reward Amount  | ***40 PEE***                |
+| Production Cycle                | ***2635200 Blocks***        |
+| Cuts                            | ***3%***                    |
 
  5.2 Basic Parameters Of PET Token
 ----------------------------------
 
-| Total Circulation              | ***56,0000,000 PET*** |
-| ------------------------------ | --------------------- |
-| Block Out Interval             | ***21 Seconds***      |
-| Out Of The Block Reward Amount | ***2 PET***           |
+| Total Circulation     | ***56,0000,000 PET*** |
+| ------------ | -------------------- |
+| Block Out Interval                | ***21 Seconds***      |
+| Out Of The Block Reward Amount    | ***2 PET***           |
 
   5.3 Initial Allocation Information For PEE Tokens
 ----------------------------------
 
 PEE total circulation for a total of 3,33,0000,000 PEE, triggered by quantum content marketing, light cloud to calculate force clients to dig version 1.0, the cloud to calculate force light client version 2.0, all nodes mining and mining, technical maintenance, Ecological contribution, community maintenance, all nodes of reward and incentive mechanism, because the Permanent Ecological USES is POS mechanism, in the creation stage triggered PEE will be allocated in the center of the several sections to node, triggered by intelligent contract, and all data will be made public audit in the blocks in the browser. And it is regulated and supervised by Permanent Ecological AI.
 
-| ***De-Centralizing Node Properties*** | ***Allocation Proportion*** | ***Distribution Number*** |
-| ------------------------------------- | --------------------------- | ------------------------- |
-| Quantum Trigger Content Promotion     | ***10%***                   | ***333000000***           |
-| CloudHash&Light Client version 1.0    | ***10%***                   | ***333000000***           |
-| CloudHash&Light Client version 2.0    | ***15%***                   | ***499500000***           |
-| All The Nodes Mining                  | ***25%***                   | ***832500000***           |
-| Maintenance                           | ***10%***                   | ***333000000***           |
-| Ecological Contribution               | ***5%***                    | ***166500000***           |
-| Community Maintenance                 | ***10%***                   | ***333000000***           |
-| All The Nodes Reward                  | ***10%***                   | ***333000000***           |
-| Incentive Mechanism                   | ***5%***                    | ***166500000***           |
+| ***De-Centralizing Node Properties***   | ***Allocation Proportion*** | ***Distribution Number***  |
+| -------------------------- | ------------------ | ------------------- |
+| Quantum Trigger Content Promotion  | ***10%***      | ***333000000*** |
+| CloudHash&Light Client version 1.0 | ***10%***      | ***333000000*** |
+| CloudHash&Light Client version 2.0 | ***15%***      | ***499500000*** |
+| All The Nodes Mining               | ***25%***      | ***832500000*** |
+| Maintenance                        | ***10%***      | ***333000000*** |
+| Ecological Contribution            | ***5%***       | ***166500000*** |
+| Community Maintenance              | ***10%***      | ***333000000*** |
+| All The Nodes Reward               | ***10%***      | ***333000000*** |
+| Incentive Mechanism                | ***5%***       | ***166500000*** |
 
 6.0 Permanent Ecological Disclaimer
 ==============================
@@ -352,17 +355,17 @@ Thin Client Security：[en.bitcoin.it/wiki/Thin_Client_Security][13]
 Ethereum 2.0 Lavenderpaper：[vitalik.ca/files/mauve_paper.html][14]*
 
 
-[1]: https://bitcoin.org/bitcoin.pdf
-[2]: https://github.com/ethereum/wiki/wiki/White-Paper
-[3]: https://download.slock.it/public/DAO/WhitePaper.pdf
-[4]: https://arxiv.org/pdf/1510.02037v2.pdf
-[5]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
-[6]: https://github.com/tendermint/tendermint/wiki
-[7]: https://pmg.csail.mit.edu/papers/osdi99.pdf
-[8]: https://bitshares.org/technology/delegated-proof-of-stake-consensus
-[9]: https://interledger.org/rfcs/0001-interledger-architecture
-[10]: https://blockstream.com/sidechains.pdf
-[11]: https://github.com/tendermint/abci
-[12]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
-[13]: https://en.bitcoin.it/wiki/Thin_Client_Security
-[14]: https://vitalik.ca/files/mauve_paper.html
+  [1]: https://bitcoin.org/bitcoin.pdf
+  [2]: https://github.com/ethereum/wiki/wiki/White-Paper
+  [3]: https://download.slock.it/public/DAO/WhitePaper.pdf
+  [4]: https://arxiv.org/pdf/1510.02037v2.pdf
+  [5]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
+  [6]: https://github.com/tendermint/tendermint/wiki
+  [7]: https://pmg.csail.mit.edu/papers/osdi99.pdf
+  [8]: https://bitshares.org/technology/delegated-proof-of-stake-consensus
+  [9]: https://interledger.org/rfcs/0001-interledger-architecture
+  [10]: https://blockstream.com/sidechains.pdf
+  [11]: https://github.com/tendermint/abci
+  [12]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+  [13]: https://en.bitcoin.it/wiki/Thin_Client_Security
+  [14]: https://vitalik.ca/files/mauve_paper.html
