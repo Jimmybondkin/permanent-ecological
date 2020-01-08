@@ -1,10 +1,10 @@
 # Permanent Ecological WHITEPAPER
 
 **PEE, A Highly Customizable Blockchain Infrastructure**
-*Version: 1.3 (091319)*
 
-Directory
+Version: 1.3 (091319)
 
+## Directory ###########################################################
 
  - 1.0 Preface Abstract
  - 2.0 Permanent Ecological Overview
