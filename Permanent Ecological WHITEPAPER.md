@@ -136,13 +136,13 @@ The Tendermint consensus algorithm is implemented in a program called Tendermint
 
 ABCI allows Byzantine fault-tolerant replication of applications that can be written in any programming language. Tendermint Core (" consensus engine ") communicates with applications through an abci-compliant socket protocol. Take a familiar example, bitcoin. Bitcoin is a cryptocurrency blockchain in which each node maintains a fully audited UTXO database. If someone wants to create a bitcoin-like system on top of ABCI,
 **Tendermint Core will be responsible for:**
-*Sharing blocks and transactions among nodes;
-Establish a standard/immutable order for transactions (blockchain);*
+    * Sharing blocks and transactions among nodes;
+    * Establish a standard/immutable order for transactions (blockchain);
 **The application will be responsible for:**
-*Maintain the UTXO database;
-Verify the encrypted signature of the transaction;
-Block transactions where costs do not yet exist;
-Allows clients to query the UTXO database;*
+    * Maintain the UTXO database;
+    * Verify the encrypted signature of the transaction;
+    * Block transactions where costs do not yet exist;
+    * Allows clients to query the UTXO database;
 
 ABCI contains three main message types, which are sent by core to the application, and the application will respond to the message accordingly:
 
@@ -264,8 +264,8 @@ The Permanent Ecological public chain issues two tokens in total, which is a dua
 
 ### 5.1 Basic Parameters Of PEE Token
 
-| Total Circulation               | ***3,33,0000,000 PEE***     |
-| -------------- | ------------------------------- |
+| ***Total Circulation***         | ***3,33,0000,000 PEE***     |
+| ------------------------------- | --------------------------- |
 | Method Of Proof Pf Interest     | ***POS is based on the Tendermint engine*** |
 | Block Out Interval              | ***6 Seconds***             |
 | Out Of The Block Reward Amount  | ***40 PEE***                |
@@ -274,8 +274,8 @@ The Permanent Ecological public chain issues two tokens in total, which is a dua
 
 ### 5.2 Basic Parameters Of PET Token
 
-| Total Circulation     | ***56,0000,000 PET*** |
-| ------------ | -------------------- |
+| ***Total Circulation***           | ***56,0000,000 PET*** |
+| --------------------------------- | --------------------- |
 | Block Out Interval                | ***21 Seconds***      |
 | Out Of The Block Reward Amount    | ***2 PET***           |
 
