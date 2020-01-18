@@ -10,328 +10,329 @@ document.  Please check regularly for updates!_
 ## 目录 ###########################################################
 
   * 1.0 前言摘要
-  * 2.0 Permanent Ecological Overview
-  * 3.0 Overview Of The Core Technology Of Permanent Ecological
-    * 3.1 Tendermint Consensus Algorithm
-      * 3.1.1 Tendermintbft
-      * 3.1.2 The Verifier
-      * 3.1.3 Consensus Agreement
-      * 3.1.4 Lightweight
+  * 2.0 Permanent Ecological简明概述
+  * 3.0 Permanent Ecological核心技术概述
+    * 3.1 Tendermint 共识算法
+      * 3.1.1 TendermintBFT
+      * 3.1.2 验证人
+      * 3.1.3 共识协议
+      * 3.1.4 轻量化
       * 3.1.5 ABCI
-    * 3.2 Constitutional System
-    * 3.3 Regions And Dispersers
-    * 3.4 Block Chain Communication -Ibc
-    * 3.5 Distributed Exchange
-    * 3.6 Ethereum Zoom
-    * 3.7 Multi-Application Integration
-    * 3.8 Network Partition Mitigation
-    * 3.9 Bridge To Other Cryptocurrencies
-      * 3.9.1 The Token Will Be Sent To The Permanent Ecological Distributor
-      * 3.9.2 Extract The Token From The Permanent Ecological Distributor
-      * 3.9.3 Overall Responsibility System In Bridge Area
-  * 4.0 Introduction To The Permanent Ecological Application
-    * 4.1 Cloud Computing Power Light Client
-    * 4.2 Distributed Digital Currency Exchange
-    * 4.3 Multi-Chain Blockchain Wallet
-    * 4.4 Autonomous Business Alliance
-    * 4.5 Decentralized Financial Banking
-  * 5.0 Permanent Ecological Release Overview
-    * 5.1 Basic Parameters Of Pee Token
-    * 5.2 Basic Parameters Of Pet Token
-    * 5.3 Initial Allocation Information Of Pee Tokens
-  * 6.0 Permanent Ecological Disclaimer
-  * 7.0 Permanent Ecological Relevant Appendices And Literature
+    * 3.2 宪法制度
+    * 3.3 区域与分散器
+    * 3.4 区块链间通信-IBC
+    * 3.5 分布式交换
+    * 3.6 以太坊缩放
+    * 3.7 多应用整合
+    * 3.8 网络分区缓解
+    * 3.9 桥接到其他加密货币
+      * 3.9.1 将令牌发送到Permanent Ecological分散器
+      * 3.9.2 从Permanent Ecological分散器提取令牌
+      * 3.9.3 桥梁区的总体责任制
+  * 4.0 Permanent Ecological应用生态概述
+    * 4.1 云算力轻客户端
+    * 4.2 分布式数字货币交易所
+    * 4.3 多链区块链钱包
+    * 4.4 自治商业联盟
+    * 4.5 去中心化金融银行
+  * 5.0 Permanent Ecological发行概述
+    * 5.1 PEE代币基础参数
+    * 5.2 PET代币基础参数
+    * 5.3 PEE代币初始分配信息
+  * 6.0 Permanent Ecological免责声明
+  * 7.0 Permanent Ecological相关文献
 
 
-## 1.0 Introduction In This Paper ###########################################################
+## 1.0 前言摘要 ###########################################################
 
-> Permanent Ecological Changes Will Shape The Future Of Business-Pee Global Financial Autonomy
+> Permanent Ecological变革未来商业新形态—PEE全球金融自治管理会
 
-A thought called **"Decentralization"** is innate from the beginning of human society. Human desire to remove the center, to achieve direct communication between people, direct transactions, direct transmission. Humans believe that one day we may no longer need centralised institutions. In the long course of human development, this kind of thinking has repeatedly collided with different organizations, environments and carriers, thus resulting in different social changes. In today's space-time dimension, we can still see decentralized religious churches, as well as decentralized political systems and social organizations.
+一种叫 **“去中心化[Decentralization]”** 的思想，从人类社会诞生之初与生俱来。人类渴望去掉中心，实现人与人之间直接沟通、直接交易、直接传播。人类相信总有一天，我们可能不再需要中心化的机构。在人类的发展长河中，这种思想都一再发生碰撞，与不同的组织、环境和载体相结合，进而产生不同的社会变革。站在如今的时空维度中，依然可以看到去中心化的宗教教会，也可以看到去中心化的政治制度和社会组织。
 
-The emergence and large-scale use of information technology has brought technology carriers to the idea of decentralization. Tracing the thread of this combination of ideas and technologies has produced a number of popular, even disruptive, innovations. P2P download, CND (p-cnd), distributed computing (cloud computing), social media (we media), P2P lending, crowdfunding, sharing, block chain, self-organizing DAO, etc. Along this line of innovation, we will see the footprints of many great innovative Internet. Throughout the development history of decentralized thinking, whether the blockchain technology will eventually win, or whether it will compromise with other technologies and integrate with each other. However, it is precisely because each technology route has felt great pressure from the market that it has also generated great development momentum. We believe that whatever the outcome, the world will be transformed.
+信息技术的产生与大规模使用，为去中心化的思想，带来了技术载体。追溯着这个思想和技术相结合的脉络，产生了大量人们喜闻乐见的，甚至颠覆性的创新。P2P下载、CND（P-CND）、分布式计算（云计算）、社交媒体（自媒体）、P2P借贷、众筹、共享、区块链、自组织DAO等。沿着这个创新脉络，我们会看到众多伟大的创新互联网的足迹。纵观去中心化思想的发展历史，不管区块链这条技术路线，是否最终会赢得胜利，抑或与其他技术互相妥协、互相融合。但是，正是由于每条技术路线都感受到了来自市场的的巨大压力，从而自身也催生出巨大的发展动力。我们相信，无论最终结果如何，这个世界终将被彻底改变。
 
-Permanent Ecological has been looking for a new design of the future business form of blockchain, which is not only limited to the one-way business expansion, but also lies in the innovation of decentralized finance, decentralized expansion of business centers and the blockchain network architecture. The Permanent Ecological connection connects many networks of independent blockchains, and the interoperability between blockchains is realized with the help of the Permanent Ecological BFT consensus agreement and the Tendermint consensus algorithm, which fully realizes the value potential of the blockchain network.
+Permanent Ecological一直寻找区块链未来商业形态的全新设计，不止单单局限于单向业务的拓展，更多的在于去中心化金融、商业中心分散拓展以及区块链网络架构的创新。Permanent Ecological连接着许多独立区块链的网络，并且借助Permanent Ecological BFT共识协议以及Tendermint共识算法实现区块链之间的互操作性，充分的实现了区块链网络的价值潜力。
 
-In this paper, the Permanent Ecological public chain will be constantly updated, which includes but is not limited to key governance and key technologies,_**The mission of the Permanent Ecological public chain is to break the traditional business form and reshape a new business form for the future from the four dimensions of block chain technology, business model, economic model and governance structure, as well as create a new economic form, new organizational form and new social form.**_
+本文中Permanent Ecological公链将不断更新，这些更新包括但不限于关键治理和关键技术，Permanent Ecological公链_**使命是打破传统的商业形态，从区块链技术、商业模式、经济模型和治理结构四个维度为未来重新塑造了一个新的商业形态，还创造了一个新的经济形态、新的组织形态和新的社会形态。**_
 
-## 2.0 Permanent Ecological Concise Overview ###########################################################
+## 2.0 简明概述 ###########################################################
 
-> The Term Permanent Ecological Refers To Creating a Sustainable Commercial Ecological Field Through Consensus Building And Win-Win Cooperation
+> Permanent Ecological永恒生态意指通过共识共建共赢来打造一个持续发展的商业生态领域。
 
-Contractual relationships are an essential part of human society, and the importance of blockchain technology lies in providing a very efficient and low-cost way to achieve reliable contractual relationships. The contractual relationship lies in the relative consensus and trust reached by multiple parties when they participate in complex business interactions, and the relationship has always been maintained in business interactions, while the contractual relationship of block chain technology is very low cost. That is to say, blockchain technology provides an important element for distributed commerce (improving network benefits with very low transaction costs). More and more people realize that blockchain is a new value Internet influence, and will gradually transform the current business model into a more efficient distributed network. In particular, the general authentication mechanism built into most modern blockchains emphasizes the rights of each network participant and will revolutionize existing business models.
+契约关系是人类社会的基本组成部分，区块链技术的重要性在于提供一种非常有效和低成本的方式来实现可靠的契约关系。契约关系在于多方参与复杂的业务交互时达成了相对共识信任，并且在业务交互一直保持着这种关系，而这种区块链技术的契约关系又非常的低成本。也就是说区块链技术为分布式商业提供了重要的元素（以极低的交易成本提高网络效益），越来越多的人认识到区块链作为新的价值互联网影响力，并将逐步把当前的商业模式转变为更高效的分布式网络。 特别是内置于大多数现代区块链中的通证机制，强调每个网络参与者的权利，并将革新商业的现有模式。
 
-However, blockchain technology is still in its early stages. As with other new technologies, there are also shortcomings, including limited performance and governance mechanisms that have not yet been developed, and the lack of a sound business model and economic model for the majority of public chains, which make it difficult for the majority of public chains to support real distributed business collaboration. Organizations such as Hyperledger Fabric and R3 Corda, as well as the Ethereum Enterprise Alliance, are trying to address these performance and governance issues through consortium chains to make blockchain technology more enterprise-ready. However, today's chain of alliances is dominated by large corporations, whose closed up-and-down governance model is very inefficient. The alliance chain may lack vitality because of the lack of the general economic model of public chain and its openness and incentive. **We hope that through Permanent Ecological link technology, thousands of Small Medium Businesses (SMBs), even individual freelancers, can provide their services and enjoy the rewards in an open network.**
+不过，区块链技术仍处于早期阶段。与其它新技术一样也存在缺点，包括有限的性能和还没有发展起来的治理机制，而且绝大多数的公链都缺乏完善的商业模式与经济模型，这些缺点使得绝大多数的公链都难以支持真实的分布式商业协作。诸如Hyperledger Fabric和R3 Corda，以及以太坊企业联盟（Ethereum Enterprise Alliance）等组织都在试图通过联盟链（consortium chains）解决这些性能和治理的问题，使区块链技术更适用于企业。然而，如今的联盟链由大型企业公司主导的，他们封闭式的链上链下治理模式非常低效。联盟链可能因为缺乏公有链的通证经济模型及其开放性和激励性而缺乏活力。我们希望通过Permanent Ecological公链技术，让让成千上万的中小企业(Small Medium Businesses，SMBs)，甚至是个体自由职业者，可以在一个开放的网络中提供他们的服务并享受回报。
 
-Ethereum offers Turing's complete virtual machine running intelligence contract, bringing many hopes for developing distributed applications. However, smart contracts can only deal with deterministic logic (so each node can reach the same state after processing the same transaction and block), whereas a large amount of existing business logic is uncertain and may change at different times and under different environmental parameters. On the other hand, some real-world business logic should run down the chain and should not be executed as a type of smart contract such as a repeatable operation. Utilizing services and resources under distributed ledger integration and collaborative chain is the key to further promote the application of block chain technology in more real scenarios.
+以太坊提供了图灵完备的虚拟机运行智能合约，带给人们开发分布式应用的诸多希望。 然而，智能合约只能处理确定性逻辑（因此每个节点在处理完同一交易和块后都能达到相同的状态），而大量现存的业务逻辑是不确定的，在不同时间和不同环境参数下可能会发生变化。另一方面，一些真实世界的业务逻辑应该在链下运行，不应该作为诸如可重复运算的智能合约这种类型来执行。 利用分布式账本集成和协同链下的服务和资源，是进一步推动区块链技术在更多真实场景中应用的关键。
 
-It is not feasible to use a single public chain to handle all use cases. Each day a different blockchain comes online, each focusing on one aspect of the problem, such as distributed storage, asset ownership or market forecasting. According to coinmarketcap.com, there are currently more than 1,000 cryptocurrencies active on different trading platforms. Building business applications involves dealing with storage and sources of different data sources, and another motivation for our work is how to reuse some of the existing work, such as storage (IPFS, SIA, storj.io, etc.), data sending (Augur, Gnosis, Oraclize, etc.), and these dedicated blockchains provided by the Internet of things (IOTA, etc.).
+使用一个公有链来处理所有用例是不可行的。每天都有不同的区块链上线，各自专注于解决问题的一个方面，比如分布式存储、资产所有权或市场预测等。据coinmarketcap.com显示，目前有超过1000种加密货币在不同的交易平台上活跃。构建业务应用程序时涉及处理存储以及不同数据源的来源，我们的另一个工作动机是如何通过重用一些现有的工作，比如存储(IPFS, SIA, Storj.io等等)、数据发送（Augur，Gnosis，Oraclize等）和物联网（IOTA等）提供的这些专用的区块链。
 
-In addition, there are many real-time business transactions that do require closer alliance/license/private chains to handle performance issues, security issues, and business governance requirements. Therefore, our vision for a distributed business infrastructure is the ability to interoperate across multiple heterogeneous chains, including public/alliance/license/private chains.
+此外，有很多实时业务交易确实需要更密切的联盟链/许可链/私有链来处理性能问题、安全问题和业务治理要求。因此，我们对分布式商业基础设施的愿景是要具备在多种异构链，包括公共链/联盟链/许可链/私有链之间具备互操作的能力。
 
-Cross-chain technology is a natural solution to this need. However, so far, existing cross-chain technologies are mainly aimed at providing interoperability within existing blockchains and focusing on value transfer through authentication. Permanent Ecological
-It was designed based on the Tendermint consensus engine, achieving interoperability and scalability. We also built a multi-hub and multi-partition model, each partition being an independent block chain. In addition, we have separate governance structures that provide a very appropriate architecture for real businesses to model real-world complexity in the form of a Seperation of Concern (SOC).
+跨链技术是满足这一需求非常自然的解决方案。 然而目前为止，现有的跨链技术主要是为了在已有区块链中提供互操作性，并专注于通证的价值转移。Permanent Ecological
+就是基于Tendermint共识引擎进行设计的，实现了互操作性和可扩展性，我们还建立多枢纽多分区模型，每个分区都是独立的区块链。另外，我们还拥有独立的治理结构，为真实商业提供了一种非常合适的体系架构，可以用SOC（Seperation of Concern，SOC）的方式对现实世界的复杂性进行建模。
 
-Below, we focus on how the Permanent Ecological network can build the technical infrastructure for distributed business applications. If you can read this on GitHub, we're still working on this document. Please check for updates regularly! This Chinese translation was translated by Permanent Ecological community volunteers according to the English version of the white paper.
+在下文我们主要阐述了Permanent Ecological如何构建分布式商业应用的技术基础设施，如果你可以在GitHub上阅读，那么我们仍然在积极完善这个文档。请定期检查更新！本中文翻译由Permanent Ecological社区志愿者根据白皮书英文版翻译，可能有未及时更新产生的差异。
 
-## 3.0 Permanent Ecological Overview Of Core Technologies ###########################################################
+## 3.0 核心技术概述 ###########################################################
 
-Permanent Ecological is an independent parallel blockchain network, each of which is supported by the classical BFT consensus algorithm. The Permanent Ecological connection to many other blockchains (or regions) is made possible by novel inter-blockchain communication protocols. It also keeps track of various token types, keeping track of the total number of tokens in each connection area. Tokens can be safely and quickly transferred from one area to another without the need for liquid exchange between areas because all inter-area coin transfers are made by the Permanent Ecological.
+Permanent Ecological是一个独立的并行区块链网络，每个区块链都由经典的BFT共识算法提供支持。 Permanent Ecological通过新颖的区块链间通信协议连接到许多其他区块链（或区域）。并且跟踪多种令牌类型，记录每个连接区域中令牌的总数。令牌可以安全快速地从一个区域转移到另一个区域，而无需在区域之间进行液体交换，因为所有区域间硬币转移都通过Permanent Ecological进行。
 
-This architecture addresses many of the issues facing the blockchain space today, such as application interoperability, scalability, and seamless upgradability. For example, an area from Bitcoind, go-ethereum, CryptoNote, ZCash, or any blockchain system can be inserted with the Permanent Ecological. These areas allow the Permanent Ecological expansion to meet the needs of global trade. Regions are also well suited for distributed exchange and will be supported.
+这种架构解决了区块链空间当今面临的许多问题，例如应用程序的互操作性，可伸缩性和无缝可升级性。例如，可以将来自Bitcoind，Go-Ethereum，CryptoNote，ZCash或任何区块链系统的区域插入Permanent Ecological。这些区域使Permanent Ecological可以无限扩展以满足全球交易需求。区域也非常适合分布式交换，也将得到支持。
 
-The Permanent Ecological is more than just a single distributed ledger. We are designing protocols for an open distributed ledger network based on cryptographic principles, rational economics, consensus theory, transparency, and accountability that can serve as a new foundation for future business systems.
+Permanent Ecological不仅是单个分布式分类帐，我们正在基于密码学原理，合理经济学，共识理论，透明度和问责制为开放式分布式账本网络设计协议，该协议可以用作未来商业系统的新基础。
 
-### 3.1 Tendermint Consensus Algorithm
+### 3.1 Tendermint共识算法
 
-Tendermint full block chain is an open source implementation, and can be used for chain or chain alliance, its official position is the engine block chain consensus for developers, with other block chain platform such as Ethernet lane or EOS than Tendermint the biggest characteristic is its differentiated positioning, although contains a complete implementation of block chain, but it is in the form of the SDK will provide, the core functionality for developers to easily customize their proprietary block chain.
+Tendermint是一个开源的完整的区块链实现，可以用于公链或联盟链，其官方定位 是面向开发者的区块链共识引擎，与其他区块链平台例如以太坊或者EOS相比，Tendermint最大的特点是其差异化的定位，尽管包含了区块链的完整实现，但它却是以SDK的形式将这些核心功能提供出来，供开发者方便地定制自己的专有区块链。
 
-The Tendermint is roughly similar to two types of software. The first category includes the use of BFT consensus distributed key-value stores, such as the Zookeeper, etcd and consul. The second category, known as "blockchain technology", consists of cryptocurrencies such as bitcoin and ethereum and alternative distributed ledger designs such as Hyperledger's Burrow.
+Tendermint大致类似于两类软件。第一类包括使用非BFT共识的分布式键值存储，例如Zookeeper，etcd和consul。第二类称为“区块链技术”，由比特币和以太坊等加密货币以及Hyperledger's Burrow等替代分布式账本设计组成。
 
   * **3.1.1 TendermintBFT**
 
-The Tendermint open source project was launched in 2014, aiming to solve the problems of bitcoin workload proving the speed, scalability and environment of consensus algorithms. By using and improving the proven BFT algorithm developed by MIT in 1988 [20], the Tendermint team was the first to conceptively demonstrate the equity proof cryptocurrency, which addresses the equity abuse suffered by the first generation of certificates, using cryptocurrencies such as NXT and BitShares1.0.
+Tendermint开源项目诞生于2014年，旨在解决比特币工作量证明共识算法的速度，可扩展性和环境问题。通过使用和改进1988年由麻省理工学院开发的经过验证的BFT算法，Tendermint团队率先概念性地证明了股权证明加密货币，该加密货币解决了第一代证明所遭受的股权滥用问题，使用NXT和BitShares1.0等加密货币。
 
-Today, nearly all bitcoin mobile wallets use trusted servers to authenticate their transactions. This is because workload proof needs to wait for many confirmations before the deal is seen as an irreversible commitment. Double-flower attacks have been demonstrated on services like CoinBase.
+如今，几乎所有的比特币移动钱包都使用受信任的服务器为他们提供交易验证。这是因为工作量证明需要等待许多确认，然后才能将交易视为不可逆转的承诺。在CoinBase之类的服务上已经展示了双花攻击。
 
-Unlike other blockchain consensus systems, the Tendermint provides instant and provably secure mobile client payment verification. Since the Tendermint design never bifurcates, mobile wallets can receive instant confirmation of transactions, making it possible to make distrustful and practical payments on smartphones. This has also had a major impact on iot adoption.
+与其他区块链共识系统不同，Tendermint提供即时且可证明的安全的移动客户端付款验证。由于Tendermint的设计绝不分叉，因此手机钱包可以收到即时交易确认，这使得在智能手机上实现不信任和实用的支付成为现实。这也对物联网应用产生了重大影响。
 
-The validators in the Tendermint play a similar role to bitcoin miners, but use encrypted signatures to conduct the voting. The validator is the security-specific machine responsible for submitting the block. Non-verifiers can delegate their mortgage tokens to any verifier to earn a portion of the block fee and quantum reward, but they risk being penalized if the delegate verifier is hacked or breaches the agreement.
+Tendermint中的验证人与比特币矿工具有相似的作用，但使用加密签名进行投票。验证器是负责提交块的安全专用机器。非验证人可以将他们的抵押令牌委派给任何验证人，以赚取一部分区块费和量子奖励，但是如果委托验证人被黑或违反协议，则他们将面临受到惩罚的风险。
 
-The Tendermint guarantees that it will never violate its security, that is, the verifier will never submit a conflict block at the same level. To achieve this, it introduces Locking rules that modularize the path in the flowchart. Once a verifier pre-commits a block, it is "locked" on that block.And then,
-1. It must prevote for the locked block
-2. Only in a later round, with a boka of that block, can it be unlocked and precommitted for a new block.
+Tendermint 保证了永远都不会违背其安全性，也就是说，验证人永远不会在同一高度提交冲突块。为了达到这一点，它引入了一些锁定[Locking]的规则，这些规则对流程图中的路径进行了模块化。一旦一个验证人预提交了一个块，它就被“锁定”在了那个块上。然后， 
+1. 它必须为被锁定的那个块进行预投票 
+2. 只有在之后的轮中，有了那个块的一个波卡，它才能够解锁，并为一个新块进行预提交。
 
-The effective security guarantees of the Tendermint BFT consensus, as well as the collateral deposits of the stakeholders (verifiers and principals), provide provable and quantifiable security for the nodes and light customers.
+Tendermint BFT共识的行之有效的安全保证，以及利益相关者（验证人和委托人）的抵押存款，为节点和轻型客户提供了可证明的，可量化的安全性。
 
-  * **3.1.2 The Verifier**
+  * **3.1.2 验证人**
 
-In the Tendermint, each node has the same weight, and the nodes have non-negative voting rights, while the nodes with positive voting rights are called validators. The verifier signs or votes on the consensus agreement by broadcasting the password to reach agreement on the next block.
+在Tendermint中，每个节点具有相同的权重,并且节点具有非负的投票权，而具有正投票权的节点称为验证器。验证人通过广播密码签名或投票参与共识协议，以就下一个区块达成协议。
 
-The participants in the agreement are called "validators." They take turns proposing blocks and voting on them. Blocks are committed to the chain, with each block occupying a "height." The commit block may fail, and if it fails, the protocol starts the next commit, and a new verifier continues to commit the block at that height. To successfully commit a block, there are two phases of voting: "pre-vote" and "pre-commit".In the same round of submission, the same block can only be submitted to the chain if more than 2/3 validators precommit the same block.
+协议中的参与者叫着 “验证人”（validator）。他们轮流对交易区块进行提议，并对这些区块进行投票。区块会被提交到链上，每一个块占据一个“高度”（height）。提交块可能会失败，如果失败，协议就会开始下一轮的提交，并且一个新的验证人会继续提交那个高度的区块。要想成功提交一个块，需要有两个阶段的投票：“预投票”（pre-vote）和“预提交”（pre-commit）。在同一轮提交中，只有超过 2/3 的验证人对同一个块进行了预提交，这个块才能被提交到链上。 
 
-For some reason, the verifier may fail to commit a block: the current proposer may be offline, or the network may be very slow. The Tendermint allowed them to verify that a verifier should be skipped. The verifier waits a short time to receive a complete proposal block from the proposer before proceeding to the next round of voting. This reliance on timeouts makes the Tendermint a weak synchronization protocol rather than an asynchronous one. However, the rest of the protocol is asynchronous, and the verifier will only take the next step if more than 2/3 verifier sets are received. One reason the Tendermint is able to simplify is that it USES the same mechanism to submit a block and skip straight to the next round.
+由于一些原因，验证人可能在提交一个块时失败：当前提议者可能离线了，或者网络非常慢。Tendermint 允许他们证实一个验证人应该被跳过。在进行下一轮的投票前，验证人会等待一小段时间从提议者那里接收一个完整的提议块。这种对于超时的依赖，使得 Tendermint 成为了一个弱同步协议，而非一个异步协议。但是，协议的剩余部分都是异步的，只有在接收到超过 2/3 的验证人集合时，验证人才会采取下一步操作。Tendermint 能够简化的一个原因就是它使用了同样的机制来提交一个块和跳过直接进入下一轮。 
 
-Note: scores such as ⅔ and like represent the total voting power score, not the total number of verifiers, unless all verifiers have the same weight. >⅔ means "greater than ⅔", and ≥⅓ means "at least ⅓".
+注意：⅔和like之类的分数表示总投票权的分数，而不是验证者总数的分数，除非所有验证者的权重相同。>⅔表示“大于⅔”，≥⅓表示“至少⅓”。
 
-  * **3.1.3 Consensus Agreement**
+  * **3.1.3 共识协议**
 
-In terms of technology, the Tendermint prides itself on its consensus algorithm -- the world's first Byzantine fault-tolerant algorithm that can be applied to a public chain. Tendermint is famous for its simplicity, high performance and bifurcated sense of responsibility. The protocol requires a fixed set of known validators, each identified by its public key. The validator tries to agree on one block at a time, one of which is a list of transactions. A full vote on whether to reach a consensus. Each turn has a round leader or proposer proposing a block. The verifier will then vote in stages on whether to accept the proposed block or proceed to the next round. The proposers of the round are determined from an ordered list of verifiers in proportion to their voting power.
+在技术方面，Tendermint引以为傲的是其共识算法—世界上第一个可以应用于公链的拜占庭容错算法。Tendermint以其简单性、高性能和分叉责任感而著称。该协议需要一组固定的已知验证器，其中每个验证器均由其公钥标识。验证程序尝试一次就一个区块达成共识，其中一个区块是交易列表。全面投票表决是否达成共识。每个回合都有一个圆形领导者或提议者，提议一个阻止。然后，验证人将分阶段投票决定是否接受提议的区块或进入下一轮。轮次的提议者是从验证人的有序列表中确定的，与他们的投票权成正比。
 
-The security of the Tendermint stems from its use of optimal Byzantine fault tolerance through super majority voting (> a) and locking mechanisms. Together they ensure that:
+Tendermint的安全性源于其通过超级多数（> a）投票和锁定机制使用最佳的拜占庭容错功能。他们共同确保：
 
-Voting power ≥⅓ must be Byzantine in order to violate security by submitting more than two values.
+≥⅓表决权必须是拜占庭式的，以致违反安全性，其中要提交两个以上的值。
 
-If any group of validators successfully violate security, or even attempt to do so, they can be identified by protocol. This includes voting on disputed parts and broadcasting unreasonable votes.
+如果任何一组验证人成功违反安全性，甚至尝试违反安全性，则可以通过协议进行识别。这包括对有争议的部分进行投票和广播不合理的投票。
 
-In spite of the strong guarantee, the Tendermint still has excellent performance. In a benchmark of 64 nodes spread across seven data centers on five continents, the Tendermint consensus was able to handle thousands of transactions per second in the case of commercial transactions, with a submission delay of one to two seconds. It's worth noting that, even in harsh confrontational conditions, the verifier can crash or spread maliciously crafted ballots, maintaining the performance of more than a thousand transactions per second.
+尽管有强有力的保证，Tendermint仍具有出色的性能。在分布在五大洲7个数据中心的64个节点的基准中，在商业交易实例中，Tendermint共识可以每秒处理数千个事务，而提交延迟为一到两秒钟。值得注意的是，即使在严酷的对抗条件下，验证器崩溃或传播恶意制作的选票，也能保持每秒超过一千次交易的性能。
 
 ![Figure of Tendermint throughput performance](https://raw.githubusercontent.com/gnuclear/atom-whitepaper/master/images/tendermint_throughput_blocksize.png)
 
-  * **3.1.4 Lightweight**
+  * **3.1.4 轻量化**
 
-The main advantage of the Tendermint consensus algorithm is that it simplifies lightweight client security, making it an ideal choice for mobile and Internet of things applications. Although the bitcoin lightweight client must synchronize the blockhead chain and find the chain with the most work, the Tendermint lightweight client only needs to keep up with the changes to the verifier set and then verify the >⅔PreCommits in the latest block to determine the latest status. The compact lightweight client proof also enables communication between blockchains.
+Tendermint共识算法的主要优点是简化了轻客户端安全性，使其成为移动和物联网应用的理想选择。尽管比特币轻量客户端必须同步区块头链并找到工作量最大的链，但是Tendermint轻量客户端只需要跟上验证器集的更改，然后验证最新区块中的>⅔PreCommits即可确定最新状态。简洁的轻客户端证明还可实现区块链之间的通信。
 
   * **3.1.5 ABCI**
 
-The Tendermint consensus algorithm is implemented in a program called Tendermint Core. Tendermint Core is an app-independent "consensus engine" that turns any deterministic black box application into a distributed, replicated blockchain. The Tendermint Core connects to the blockchain application via the application block link port (ABCI). Thus, ABCI allows block chain applications to be programmed in any language, not just in a programming language written by the consensus engine. In addition, ABCI makes it easy to swap out the consensus layer of any existing blockchain stack.
+Tendermint共识算法在称为Tendermint Core的程序中实现。Tendermint Core是一个与应用程序无关的“共识引擎”，可以将任何确定性的黑匣子应用程序转换为分布式复制的区块链。Tendermint Core通过应用程序区块链接口（ABCI）连接到区块链应用程序。因此，ABCI允许以任何语言编程区块链应用程序，而不仅仅是用共识引擎编写的编程语言进行编程。此外，ABCI使得可以轻松交换掉任何现有区块链堆栈的共识层。
 
-ABCI allows Byzantine fault-tolerant replication of applications that can be written in any programming language. Tendermint Core (" consensus engine ") communicates with applications through an abci-compliant socket protocol. Take a familiar example, bitcoin. Bitcoin is a cryptocurrency blockchain in which each node maintains a fully audited UTXO database. If someone wants to create a bitcoin-like system on top of ABCI,
+ABCI允许应用的拜占庭容错复制可以由任意一种编程语言编写。Tendermint Core （“共识引擎”）通过一个满足 ABCI 标准的 socket 协议与应用进行交流。举个大家比较熟悉的例子，比特币。比特币是一个加密货币区块链，其中的每个节点维护了一个完全经过审计的 UTXO 数据库。如果有人想要在 ABCI 之上创建一个类似比特币的系统，
 
-**Tendermint Core will be responsible for:**
+**Tendermint Core 将会负责：**
 
-    Sharing blocks and transactions among nodes;
+    在节点间共享区块和交易；
     
-    Establish a standard/immutable order for transactions (blockchain);
+    建立交易（区块链）的标准/不可变顺序;
 
-**The application will be responsible for:**
+**而应用将会负责：**
 
-    Maintain the UTXO database;
+    维护 UTXO 数据库；
     
-    Verify the encrypted signature of the transaction;
+    验证交易的加密签名；
     
-    Block transactions where costs do not yet exist;
+    阻止花费尚未存在的交易；
     
-    Allows clients to query the UTXO database;
+    允许客户端查询 UTXO 数据库；
 
-ABCI contains three main message types, which are sent by core to the application, and the application will respond to the message accordingly:
+ABCI 包含了 3 个主要的消息类型，它们由 core 发送至应用，应用会对消息产生相应的回复: 
 
-The DeliverTx message is the main part of the application. Every transaction in the chain is transmitted through this message. The application needs to validate each transaction that receives the DeliverTx message based on the current state, application protocol, and encrypted certificate of the transaction. A validated transaction then needs to update the application status-either by binding a value to a key-value store, or by updating the UTXO database.
+DeliverTx 消息是应用的主要部分。链中的每笔交易都通过这个消息进行传送。应用需要基于当前状态，应用协议，和交易的加密证书上，去验证接收到 DeliverTx 消息的每笔交易，。一个经过验证的交易然后需要去更新应用状态 – 比如通过将绑定一个值到键值存储，或者通过更新 UTXO 数据库。 
 
-The CheckTx message is similar to DeliverTx, but it is only used to validate the transaction. The Tendermint Core's memory pool first checks the validity of a transaction by CheckTx and relays only valid transactions to other nodes. For example, an application might check for serial Numbers that are growing in the transaction, and if the serial Numbers are out of date, CheckTx returns an error. Or, they might use a volume-based system that requires recapacity for each transaction.
+CheckTx 消息类似于 DeliverTx，但是它仅用于验证交易。Tendermint Core 的内存池首先通过 CheckTx 检验一笔交易的有效性，并且只将有效交易中继到其他节点。比如，一个应用可能会检查在交易中不断增长的序列号，如果序列号过时，CheckTx 就会返回一个错误。又或者，他们可能使用一个基于容量的系统，该系统需要对每笔交易重新更新容量。 
 
-The Commit message is used to calculate a cryptographic commitment for the current application status, which is placed in the next block header. Here are some handy properties. Inconsistencies in status updates are now considered branches of the blockchain, which catch all programming errors. This also simplifies the development of a secure light-node client, since the merk-hash proof can be verified by checking on the block hash, which is signed by a quorum.
+Commit 消息用于计算当前应用状态的一个加密保证（cryptographic commitment），这个加密保证会被放到下一个区块头。这有一些比较方便的属性。现在，更新状态时的不一致性会被认为是区块链的分支，分支会捕获所有的编程错误。这同样也简化了保障轻节点客户端安全的开发，因为 Merkel-hash 证明可以通过在区块哈希上的检查得到验证，区块链哈希由一个 quorum 签署。 
 
-An application may have multiple ABCI socket connections. The Tendermint Core created three ABCI connections for the application: one for transaction validation when the memory pool is broadcasting, one for running the consensus engine when submitting blocks, and one for checking the status of the application.
+一个应用可能有多个 ABCI socket 连接。Tendermint Core 给应用创建了三个 ABCI 连接：一个用于内存池广播时的交易验证，一个用于运行提交区块时的共识引擎，还有一个用于查询应用状态。 
 
-### 3.2 Constitutional System
+### 3.2 宪法制度
 
-The distributed public ledger shall have constitutional and governance systems. Bitcoin relies on the bitcoin foundation and mining to coordinate the upgrade, but it is a slow process. Ethereum split into ETH and ETC after bifurcating to resolve TheDAO's hacking, largely because there was no prior social contract or decision-making mechanism.
+分布式公共分类帐应具有宪法和治理制度。比特币依靠比特币基金会和采矿来协调升级，但这是一个缓慢的过程。以太坊在分叉以解决TheDAO黑客事件后分成了ETH和ETC，这主要是因为没有事先的社会契约或决策机制。
 
-Permanent Ecological verifiers and representatives can vote on proposals that automatically change the system's preset parameters (for example, limit gas restrictions), coordinate upgrades, and vote on human-readable constitutional amendments governing the policy. The center of the universe. The constitution allows stakeholders to work together on issues such as theft and errors (such as the TheDAO incident) so that problems can be solved more quickly and cleanly.
+Permanent Ecological上的验证人和代表可以对可以自动更改系统预设参数（例如，限制气体限制），协调升级的提案进行投票，还可以对管理该政策的人类可读宪法的修订进行投票。宇宙中心。宪法允许利益相关者在诸如盗窃和错误（例如TheDAO事件）之类的问题上团结一致，从而可以更快，更清洁地解决问题。
 
-Each region could also have its own constitution and governance mechanisms. For example, the Permanent Ecological can have a construct that forces invariance (no rollback, except for the error of the Permanent Ecological node implementation), and each region can set its own rollback policy.
+每个区域也可以有自己的宪法和治理机制。例如，Permanent Ecological可以具有一种强制不变性的构造（无回滚，但Permanent Ecological节点实现的错误除外），而每个区域都可以设置自己的有关回滚的策略。
 
-By achieving interoperability between different policy areas, the Permanent Ecological network provides users with maximum freedom and the potential for unlicensed experimentation.
+通过在不同策略区域之间实现互操作性，Permanent Ecological网络为用户提供了最大的自由度和进行未经许可的试验的潜力。
 
-### 3.3 Zones And Dispersers
+### 3.3 区域与分散器
 
-The Permanent Ecological is a network of many blockchains supported by the Tendermint. Existing proposals aim to create a "single blockchain" with an overall global order of transactions, while the Permanent Ecological allows many blockchains to run concurrently while maintaining interoperability. Here, we describe a new model of decentralization and scalability.
+Permanent Ecological是由Tendermint支持的许多区块链的网络。现有建议旨在创建一个具有整体全球交易顺序的“单个区块链”，而Permanent Ecological允许许多区块链在保持互操作性的同时并发运行。在这里，我们描述了分散和可扩展性的新型模型。
 
-Permanent Ecological Disperser management by many independent block chain, known as the "Zones" (sometimes called "fragments", reference database extensions technology called "debris"). The continuous flow of the latest block lift from the regions published on the disperser enables the disperser to keep up with the state of each region. Again, each region is synchronized with the state of the disperser (but not indirectly through the disperser). The packets are then passed from one region to another by publishing Merkle proofs as evidence of the sending and receiving of information. This mechanism is called block chain to block communication, or IBC.
+Permanent Ecological Disperser管理着许多独立的区块链，称为“Zones”（有时称为“碎片”，参考称为“碎片”的数据库扩展技术）。来自发布在分散器上的区域的持续不断的最新块提交流使分散器能够跟上每个区域的状态。同样，每个区域都与分散器的状态保持同步（但区域之间不是通过分散器间接地保持同步）。然后，通过发布Merkle证明作为信息发送和接收的证据，将信息包从一个区域传递到另一个区域。这种机制称为区块链间通信，简称IBC。
 
-### 3.4 Block Chain Communication -IBC
+### 3.4 区块链间通信-IBC
 
-Now let's look at how the disperser communicates with the region. Chain, for example, if there are three blocks "Zone1", "Zone2" and "Disperser", we hope the Zone1 packets sent to "Zone2", and through the "Disperser". To move packets from one block chain to another, a certificate is published on the receiving chain. Evidence suggests that the sending chain publishes packets of so-called destinations. In order for the receiving chain to be able to check this proof, it must be able to keep up with the sender's bulk. This mechanism is similar to that used by side chains, which require two interacting chains to know each other through two-way presence to prove the datagram (transaction) flow.
+现在我们看一下分散器和区域之间如何通信。例如，如果有三个区块链“ Zone1”，“ Zone2”和“ Disperser”，我们希望“ Zone1”产生发往“ Zone2”的数据包，并通过“ Disperser”。为了将数据包从一个区块链移动到另一个区块链，在接收链上发布证明。证据表明，发送链发布了所谓目的地的数据包。为了使接收链能够检查此证明，它必须能够跟上发送方的块头。这种机制类似于侧链所使用的机制，侧链需要两条相互作用的链通过双向的存在证明数据报（事务）流来相互了解。
 
-Naturally, there are two types of transactions that define the IBC protocol: an IBCBlockCommitTx transaction that allows the block chain to prove its most recent hash value to any observer; Another IBCPacketTx transaction allows the blockchain to prove to any observer that a given packet is indeed published by the sender's application by Merkle's proof of the nearest block hash.
+自然可以使用两种类型的交易来定义IBC协议：一种 IBCBlockCommitTx交易，允许区块链向任何观察者证明其最近的哈希值；另一种IBCPacketTx交易，允许区块链向任何观察者证明给定的数据包确实是由发件人的应用程序通过对最近的区块哈希的Merkle证明发布的。
 
-By splitting the IBC mechanism into two separate transactions, we allow the capital market mechanism of the receiving chain to determine the submitted (or acknowledged) packets, while allowing the sending chain complete freedom to allow as many outbound packets as possible.
+通过将IBC机制拆分为两个独立的交易，我们允许接收链的本钱市场机制确定提交（即确认）的数据包，同时允许发送链完全自由地允许允许多少个出站数据包。
 
-### 3.5 Distributed Switching
+### 3.5 分布式交换
 
-Just as bitcoin improves security by becoming a distributed, massively copied ledger, we can reduce the vulnerability of exchanges to external and internal hackers by running them on the blockchain. We call this a distributed exchange.
+就像比特币通过成为分布式的，大规模复制的账本来提高安全性一样，我们可以通过在区块链上运行交易所来减少交易所受到外部和内部黑客的攻击。我们称其为分布式交换。
 
-oday, the cryptocurrency community's so-called decentralized exchanges are based on something called "atomic cross-chain" (AXC) trading, defined as quantum cross-chain [QXC]. With QXC transactions, two users on two different chains can make two transfer transactions committed together in two ledgers, or not committed at all (that is, quantum). For example, even if bitcoin and ethereum are not connected to each other, two users can use QXC transactions to exchange bitcoins for ethereum (or any two tokens in two different ledgers). The advantage of running exchanges on QXC transactions is that users do not need to trust each other or trade match services. The downside is that both parties must be online to trade.
+如今，加密货币社区所谓的去中心化交易所是基于一种称为“原子跨链”（AXC）交易的东西，Permanent Ecological定义为量子跨链[QXC]。使用QXC事务，两个不同链上的两个用户可以进行两个在两个分类帐上一起提交的转移事务，或者根本不提交（即量子）。例如，即使比特币和以太坊没有相互连接，两个用户也可以使用QXC交易将比特币换成以太币（或两个不同分类账中的任意两个代币）。在QXC交易上运行交换的好处是用户都不需要互相信任或交易匹配服务。缺点是双方都必须在线才能进行交易。
 
-Another type of decentralized exchange is a large-scale replicated distributed exchange that runs on its own blockchain. Users who make such trades can submit limit orders and shut down their computers, and the trades can be executed without the user being online. The blockchain represents the trader matching and completing the transaction.
+分散式交换的另一种类型是在其自己的区块链上运行的大规模复制分布式交换。进行这种交易的用户可以提交限价单并关闭其计算机，并且交易可以在用户不在线的情况下执行。区块链代表交易者匹配并完成交易。
 
-The Tendermint consensus offers other benefits of faster transaction submission. By giving priority to fast certainty without sacrificing consistency, the region in the Permanent Ecological can quickly complete the transaction - the transaction of the exchange order and the transfer of the IBC token to and from other regions.
+Tendermint共识提供了更快的事务提交的其他好处。通过在不牺牲一致性的情况下优先考虑快速确定性，Permanent Ecological中的区域可以快速完成交易-对于交换订单交易以及IBC令牌往返其他区域的转移。
 
-Given the current status of cryptocurrency exchange, an important application of Permanent Ecological is distributed exchange (aka the Permanent Ecological DEX). Transaction throughput and commit latency are comparable to centralized exchange. Traders can submit limit orders that can be executed without both parties being online. With the help of the Tendermint, the Permanent Ecological hub and IBC, traders can quickly move money in and out of the exchange to other areas.
+鉴于当今的加密货币交换状态，Permanent Ecological的一个重要应用是分布式交换（又名Permanent Ecological DEX）。事务吞吐能力以及提交延迟可以与集中式交换媲美。交易者可以提交限价单，无需双方在线即可执行。借助Tendermint，Permanent Ecological枢纽和IBC，交易者可以快速将资金进出交易所到其他区域。
 
-### 3.6 Ethereum Zoom
+### 3.6 以太坊缩放
 
-Resolving the expansion issue is an open question for ethereum. Currently, ethereum nodes process each single transaction and store all states. Since the Tendermint can demonstrate faster block submission than ethereum's workload, the EVM area supported by the Tendermint consensus and running on the bridge ether can provide higher performance for ethereum's blockchain. In addition, although the scatterer and IBC packet mechanisms themselves do not allow arbitrary execution of contract logic, they can be used to coordinate token movement between ethereum contracts running on different regions, providing the basis for toker-centric ethereum scaling through fragmentation.
+解决扩展问题是以太坊的一个开放问题。当前，以太坊节点处理每个单笔交易并存储所有状态。 由于Tendermint可以比以太坊的工作量证明更快地提交区块，因此由Tendermint共识支持并在桥接醚上运行的EVM区域可以为以太坊区块链提供更高的性能。此外，尽管分散器和IBC数据包机制本身不允许任意执行合约逻辑，但它可用于协调在不同区域上运行的以太坊合约之间的令牌移动，从而通过分片为以令牌为中心的以太坊缩放提供基础。
 
-### 3.7 Multi-Application Integration
+### 3.7 多应用整合
 
-The Permanent Ecological region runs any application logic that is defined at the beginning of the region's life cycle and may be updated over time through governance. This flexibility allows the Permanent Ecological region to act as a bridge to other cryptocurrencies, such as ethereum or bitcoin, and also allows those blockchain derivatives that use the same code base but have a different set of validators and initial distribution. This allows a number of existing cryptocurrency frameworks (e.g., etim, Zerocash, bitcoin, CryptoNote, etc.) to be used in conjunction with Tendermint Core, which is a high performance consensus engine that can be used on a generic network, providing a huge opportunity for cross-platform interoperability. In addition, as a multi-asset block chain, a single transaction may contain multiple inputs and outputs, each of which can be any token type, so that the Permanent Ecological can be directly used as a platform for decentralized transactions, although it is assumed that the order is matched through other platforms. Alternatively, the area can be used as a distributed fault-tolerant exchange (with an order book), which can be a serious improvement on the existing centralized cryptocurrency exchange, which is often hacked over time.
+Permanent Ecological区域运行任意应用程序逻辑，该逻辑在区域生命周期的开始就定义，并且可能会随着时间的推移而通过治理进行更新。这种灵活性允许Permanent Ecological区域充当与其他加密货币（如以太坊或比特币）的桥梁，并且还允许使用相同的代码库但具有不同的验证器集和初始分布的那些区块链衍生产品。这使得许多现有的加密货币框架（例如以太坊，Zerocash，比特币，CryptoNote等）可以与Tendermint Core一起使用，Tendermint Core是一个性能较高的共识引擎，可以在通用网络上使用，这为跨平台的互操作性提供了巨大的机会。此外，作为多资产区块链，单个交易可能包含多个输入和输出，其中每个输入可以是任何令牌类型，使Permanent Ecological可以直接用作去中心化交易的平台，尽管假定订单是通过其他平台匹配的。或者，区域可以用作分布式容错交换（带有订单簿），这可以对现有的集中式加密货币交换进行严格的改进，而随着时间的流逝，该交换中心通常会遭到黑客入侵。
 
-Area can also be used as a support block chain version of enterprise and government system, which is traditionally organized by an organization or group of running some of the specific services as ABCI applications that run on an area, which makes it can inherit Permanent Ecological public network security and interoperability, without sacrificing control of the basic services. Thus, Permanent Ecological may provide the best of both worlds for organizations that want to take advantage of blockchain technology but give up control entirely to distributed third parties.
+区域还可以用作企业和政府系统的区块链支持版本，其中传统上由一个组织或一组组织运行的特定服务的某些部分作为ABCI应用程序在某个区域上运行，这使它可以继承Permanent Ecological公共网络的安全性和互操作性，而不会牺牲对基础服务的控制。因此，对于希望利用区块链技术但对将控制权完全放弃给分布式第三方的组织而言，Permanent Ecological可能提供两全其美的方法。
 
-### 3.8 Network Partition Mitigation
+### 3.8 网络分区缓解
 
-It has been claimed that a major problem with consensus algorithms that favor consistency, such as the Tendermint, is that any network partition that results in no voting rights greater than (for example, ≥offline) will completely terminate the consensus. The Permanent Ecological system can alleviate this problem by using global hubs with regional autonomous regions, where voting rights are allocated for each region based on a common geographical area. For example, a common example might be for cities or regions to operate their own areas while sharing a common distributor (such as a Permanent Ecological distributor), thus sustaining municipal activities when the distributor is stopped due to temporary network partitioning. Note that this allows real geological, political, and network topological characteristics to be considered when designing robust joint fault-tolerant systems.
+有人声称，像Tendermint这样的有利于一致性的共识算法的一个主要问题是，任何导致没有投票权大于（的单个网络分区（例如，≥offline下线）的任何网络分区都将完全终止共识。Permanent Ecological体系结构可以通过使用具有区域自治区的全球枢纽来缓解此问题，在该自治区中，每个区域的投票权均基于共同的地理区域来分配。例如，一个通用范例可能是让各个城市或地区在共享一个公共分散器（例如Permanent Ecological分散器）的同时操作自己的区域，从而在散器由于临时网络分区而停止时，使市政活动得以持续。请注意，这允许在设计健壮的联合容错系统时考虑真实的地质，政治和网络拓扑特征。
 
-### 3.9 Bridge To Other Cryptocurrencies
+### 3.9 桥接到其他加密货币
 
-A privileged area can act as a source for a bridge token for another cryptocurrency. Bridges are similar to the relationship between the Permanent Ecological hub and the region. Both must follow the latest block of the other to verify that the token has been moved from one to the other. The bridge area on the Permanent Ecological network keeps pace with hubs and other cryptocurrencies. The logic of indirectly allowing the disperser through the bridging area is kept simple and independent of other blockchain consensus strategies (such as bitcoin workload proof mining).
+特权区域可以充当另一种加密货币的桥接令牌的来源。桥梁类似于Permanent Ecological枢纽与区域之间的关系。两者都必须跟上另一个的最新块，以验证令牌已从一个移到另一个。Permanent Ecological网络上的“桥接区域”与集线器以及其他加密货币保持同步。通过桥接区域的间接允许分散器的逻辑保持简单，并且与其他区块链共识策略（例如比特币的工作量证明挖掘）无关。
 
-  * **3.9.1 The Token Is Sent To The Permanent Ecological Distributor**
+  * **3.9.1 将令牌发送到Permanent Ecological分散器**
 
-Each bridge validator will run a blockchain with the Tendermint, a special ABCI bridge application, and a full node of the "origin" blockchain.
+每个桥区验证器都将运行带有Tendermint的区块链，一个特殊的ABCI桥应用程序，以及一个“起源”区块链的完整节点。
 
-When a new block is mined at the origin, the bridge area validator will agree on the committed block by signing and sharing its local view of the origin's blockchain tricks. When the bridge area receives the payment at the origin (for a PoW chain like ethereum or bitcoin, it is confirmed that sufficient confirmation has been made), a corresponding account with that balance is created on the bridge area.
+当在原点上挖掘新块时，桥接区域验证器将通过签署并共享其对原点的区块链技巧的本地视图来就已提交的块达成协议。当桥接区域在原点上收到付款时（对于以太坊或比特币这样的PoW链，已经确认已经确认了足够的确认），就会在桥接区域上创建一个具有该余额的对应帐户。
 
-In the case of ethereum, the bridge area can share the same set of validators as the distributor. On the ethereum side (origin), the bridge contract will allow ethereum holders to transfer the ether to the bridge area by sending the ethereum currency to the bridge contract on ethereum. Once the Ethernet is received by the bridge contract, the Ethernet cannot be extracted unless the bridge contract receives the appropriate IBC packets from the bridge region. The bridge contract tracks the set of validators for the bridge area, which may be the same as the set of validators for the distributor.
+在以太坊的情况下，桥接区域可以与分散器共享相同的验证器集。在以太坊方面（起源），桥接合同将允许以太坊持有者通过将以太币发送到以太坊上的桥接合同来将醚传送到桥接区域。一旦桥接合同接收到以太，除非桥接合同从桥接区域接收到适当的IBC数据包，否则无法提取以太。桥梁合同跟踪桥梁区域的验证人集，该验证者集可能与分散器的验证人集相同。
 
-In the case of bitcoin, the concept is similar, except that each UTXO will be controlled by threshold multi-signature P2SH releases, rather than a single bridge contract. Due to the limitations of the P2SH system, the signer cannot be the same as the disperser validator set.
+就比特币而言，此概念类似，不同之处在于，每个UTXO都将由阈值多重签名P2SH发布来控制，而不是一个单一的桥梁合同。由于P2SH系统的限制，签名者不能与分散器验证器集相同。
 
-  * **3.9.2 Extract The Token From The Permanent Ecological Distributor**
+  * **3.9.2 从Permanent Ecological分散器提取令牌**
 
-Ethereum on the bridge area (" bridging ethereum ") can be transmitted back and forth between the distributors and then destroyed by transactions that send it to specific withdrawal addresses on ethereum. The IBC packet can be used to prove that the transaction occurred in the bridge area and then published into the ethereum bridge contract to allow the ethereum currency to be extracted.
+桥接区域上的以太坊（“桥接的以太坊”）可以在分散器之间来回传输，然后通过将其发送到以太坊上特定提款地址的交易进行销毁。可以将IBC数据包证明交易发生在桥接区域上，然后将其发布到以太坊桥接合同中，以允许以太币被提取。
 
-In the case of bitcoin, the restricted scripting system makes it difficult to mirror the IBC coin transfer mechanism. Each UTXO has its own independent distribution, so each UTXO must be migrated to the new UTXO when the set of bitcoin managed signers changes. One solution is to compress and decompress the UTXO set as needed to reduce the total number of UTXO.
+就比特币而言，受限制的脚本系统使镜像IBC硬币转移机制变得困难。每个UTXO都有其自己独立的发布，因此，当比特币托管签名者的集合发生变化时，每个UTXO必须迁移到新的UTXO。一种解决方案是根据需要压缩和解压缩UTXO集，以减少UTXO的总数。
 
-  * **3.9.3 Overall Accountability In The Bridge Area**
+  * **3.9.3 桥梁区的总体责任制**
 
-The risk of such a shrunken contract lies with rogue verifiers. Byzantine voting power ≥⅓ May cause the fork to withdraw the etheric COINS from the bridge contract over ethereum while keeping the etheric over the bridge area. Worse, the >⅔ Byzantine voting rights could deviate from the original bridge logic of the bridge belt, thereby stealing the ether outright from those who sent it to the bridge contract.
+这样的缩水合同的风险在于流氓验证者。≥⅓拜占庭投票权可能会导致叉子，将以太币从以太坊上的桥合约中撤出，同时将以太保持在桥区上。更糟的是，>⅔拜占庭投票权可能会偏离桥带的原始桥接逻辑，从而从那些将其发送到桥牌合同的人那里彻底窃取以太币。
 
-These problems can be solved by designing fully responsible Bridges. For example, all IBC packets from the distributor and the originating place may require the bridge region validation so that the distributor or originator's bridge can effectively challenge and validate all state transition contracts in the bridge region. The distributors and sources should allow the bridge area verifier to post collateral and should delay the transfer of tokens from the bridge contract (and the collateral is unsecured for a sufficiently long period) to allow any challenge from the independent auditor. We will open the normative design and the realization of this system as the Suggestions for Permanent Ecological improvement in the future, so as to pass the governance system of the Permanent Ecological distributor.
+通过设计完全负责的桥梁可以解决这些问题。例如，来自分散器和始发地的所有IBC数据包都可能需要桥接器区域进行确认，以使分散器或始发者的桥接器可以有效地挑战和验证桥接器区域的所有状态转换合同。分散器和源应允许桥接区域验证程序过帐抵押品，并且应延迟将令牌从桥牌合约中转移出去（并且抵押品无担保期限足够长），以允许独立审核员提出任何挑战。我们将规范的设计和该系统的实现作为Permanent Ecological未来的改进建议开放，以供Permanent Ecological分散器的治理系统通过。
 
-## 4.0 Permanent Ecological Overview Of Applied Ecology ###########################################################
+## 4.0 应用生态概述 ###########################################################
 
-> We Have Been Trying To Build The Permanent Ecological Chain From The Four Dimensions Of Block Chain Technology, Business Model, Economic Model And Governance Structure. Business Model And Economic Model Are Also The Core And Key Of The Permanent Ecological Chain. This Paper Is a White Paper On Technology, Which Mainly Elaborates On The Technical Infrastructure Of The Permanent Ecological Public Link.
+> 我们一直努力从区块链技术、商业模式、经济模型和治理结构四个维度来构建Permanent Ecological公链，商业模式、经济模型也是Permanent Ecological公链核心关键。本文章为技术白皮书，重要阐述Permanent Ecological公链技术基础设施，应用生态的阐述主要在Permanent Ecological经济黄皮书内容中。
 
-### 4.1 CloudHash&Light Client 
+### 4.1 云算力轻客户端 
 
-We provide users with the cloud to calculate force light Client [CloudHash&Light Client], does not need to be synchronized Permanent Ecological data blocks all node, just change of synchronous validator set and verify the latest blocks of > two-thirds PreCommits can determine the latest status. This simplification makes it an ideal choice for mobile and Internet of things use cases. Users can directly use the light client of the Permanent Ecological cloud to set up nodes, and the light client supports starting the mining mode at present (there is a limit on the number and opening time of the service of the light client of mining mode at present, and the end is dominated by the latest Permanent Ecological dynamic). Each light client is only allowed to set up one mining node for mining, and must log on the Permanent Ecological cloud every day to ensure that the node network data is synchronized to the latest state and the node access is normal. The cloud power light client also supports DAPP, an intelligent contract distributed by the Permanent Ecological network, to ensure the comprehensive nature of the Permanent Ecological application.
+我们为用户提供了云算力轻客户端[CloudHash&Light Client ]，并不需要同步Permanent Ecological全节点区块数据，只需同步验证器集的更改以及验证最新区块中的>⅔PreCommits即可确定最新状态。这种简化使其成为移动以及物联网用例的理想选择。用户可以直接使用Permanent Ecological云算力轻客户端搭建节点，并且目前轻客户端支持开启挖矿模式（Permanent Ecological对目前轻客户端挖矿模式服务有数量以及开放时间限制，最终结束以Permanent Ecological最新动态为主）。每个轻客户端只允许搭建一个挖矿节点进行挖矿，并且每天必须登录Permanent Ecological云算力轻客户端确保节点网络数据同步为最新状态，并且节点访问正常。云算力轻客户端还支持Permanent Ecological网络所分发的智能合约DAPP，确保Permanent Ecological应用生态的全面性。
 
-### 4.2 Distributed Digital Currency Exchanges
+### 4.2 分布式数字货币交易所
 
-The Permanent Ecological public chain is building the emerging open financial ecosystem to build the liquidity infrastructure. The network is a binding block chain of equity proof based on the Tendermint consensus.
+Permanent Ecological公链正搭建了新兴的开放金融生态系统建设流动性基础设施，网络是建立在Tendermint共识基础上的绑定式权益证明区块链。
 
-The base state machine is responsible for executing a simple set of access control rules and a basic order booking process. The network utilizes the Shared security model, in which all the mortgage and token based logic is implemented on the Permanent Ecological basis. This model provides certainty for specific changes in the Permanent Ecological system by utilizing the Tendermint, thus providing one-way communication and inspection between the two networks. A dynamic set of independent validators and voting token holders support core protocol and relay network. Through local token systems and simple economic mechanisms, network validators, users, and voters are coordinated and motivated to achieve common goals of network security and value.
+基础状态机负责执行一组简单的访问控制规则和基本的订单预订过程。该网络利用共享安全模型，其中所有以抵押和基于token的逻辑都在Permanent Ecological上实现。该模型通过利用Tendermint为Permanent Ecological系统特定的变化提供确定性，从而在两个网络之间提供单向通信和检查。一组动态的独立验证器和投票token持有者支持core protocol 和 relay network。通过本地令牌系统和各种简单的经济机制，网络的验证器、用户和投票者被协调起来，并受到激励，以实现网络安全和价值的共同目标。
 
-The Permanent Ecological chain has also developed an unmanaged request quotation system, whose unique interaction model makes it one of the most competitive DEX models. Because the current DEX architecture makes access priority too high due to high latency and interaction scenarios, this is a price disadvantage. However, the PE quotation system introduced the inquiry model, which forced the signatory of the market maker agreement to provide the quotation in the form of order and required the maker to implement the commitment. The above protocols can provide users with a safe, fast and convenient distributed financial system.
+Permanent Ecological公链同时也开发了非托管请求报价系统，该系统独特的交互模型使其成为最具价格竞争力的DEX模型之一。由于当前的DEX架构由于高延迟和交互方案而使访问优先级过高，对价格很不利。然而PE报价系统引入了询价模型，强制要求签署做市商协议者，以订单形式提供报价，并要求maker实施承诺。通过以上协议可以给用户提供一个安全，快速，便捷的分布式金融系统。
 
-### 4.3 Multi-Chain BlockChain Wallet
+### 4.3 多链区块链钱包
 
-The Permanent Ecological wallet is HD wallet managed with a mnemonic. HD wallet is now the "premium" deterministic wallet. Based on BIP44 protocol implementation (currently commonly used BIP39, BIP44 protocol). BIP44 protocol defined, HD purse with tree structure derived keys (private and public keys), which means that the seed to generate the private key (or master key), then through the private key, you can derive a series of private key, and each child private key can be derived from a series of key sun again, and so on, can be derived. The process of deriving the child private key from the primary private key cannot be reversed. The child private key cannot derive the parent private key upward, nor can the private key of the same level be derived horizontally. Therefore, it can manage the private key in a very secure layer and effectively protect the financial privacy. Users can easily manage multiple cryptographic assets with a single wallet. Only need to back up the seed, do not need to back up the private key, to provide users with great convenience, reduce the burden of managing multi-chain assets. Light wallet currently only supports access and transaction verification.
+Permanent Ecological公链钱包是使用一个助记词来管理的HD钱包（多链钱包是HD钱包衍生），HD钱包就是现在“高级版”确定性钱包。基于 BIP44 协议实现（目前常用的还有 BIP39 、BIP44协议）。BIP44 协议中定义，HD 钱包以树状结构衍生密钥（私钥和公钥）， 这就意味着种子生成主私钥（或者说是主密钥对），再通过主私钥，可以派生出一系列的子私钥，而每个子私钥又可以衍生出一系列孙密钥，以此类推，不断可以衍生。主私钥派生出子私钥的过程不可以逆，子私钥不能向上推导出父私钥，同时也不能水平推导出同一级的私钥。所以能够非常安全的分层管理私钥，有效保护财务隐私。用户只需要一个钱包就可以方便地管理多条公链的加密资产。只需要备份种子，不需要备份私钥，为用户提供极大的便利，减轻了管理多链资产的负担。轻钱包目前仅支持存取功能和交易验证功能。
 
-### 4.4 Autonomous Business Alliance
+### 4.4 自治商业联盟
 
-Block chain autonomous business alliance is the new era of Internet commodity trade in the future, it will be a better choice. In today's business form, the global small and medium-sized enterprises and the real economy has been facing a severe test, how to block chain technology is helping them get through this cold winter became the topic under discussion, extremely capital chain chain scission, unsalable inventory products, product research and development problems such as low energy efficiency, product quality traceability are still with their development. With the increasing maturity of block chain technology, the features of distributed storage, point-to-point transmission and consensus mechanism provide a feasible way to solve these pain points. The Permanent Ecological pattern provides a new model of autonomous business alliance for the future business pattern. The supply chain management and information asymmetry brought by the centralization of e-commerce have been restricting the further development of commodity trade. The Permanent Ecological pattern gradually changes the existing business pattern by breaking this bottleneck.
+区块链自治商业联盟是未来互联网商品贸易新的时代，它将是更好的选择。在如今的商业形态中，全球中小企业及实体经济一直面临着严峻的考验，如何利于区块链技术帮助他们度过这个寒冬成为了当下极具讨论下的话题，资金链断链、库存产品滞销、产品研发效率低能、商品质量溯源等问题一直困扰着他们的发展。区块链技术的日渐成熟让分布式存储、点对点传输、共识机制等特点给这些痛点的解决提供了一条可行的思路。Permanent Ecological为未来商业形态提供了新的自治商业联盟模式，在电商自身环节供应链管理、中心化带来的信息不对称等一直限制着商品贸易进一步发展，Permanent Ecological通过打破这一瓶颈环节，来逐步改变现有商业形态。
 
-### 4.5 Decentralized Financial Banking
+### 4.5 去中心化金融银行
 
-Banks aim to solve two major problems that cannot be solved by centralized services: unequal financial services; Financial review. Unequal financial services. This refers to individuals' access to financial services such as loans, mortgages and insurance. People who have little or no access to financial services are often called "unbanked." Decentralised financial applications aim to improve the problem and ensure that they are accessible to people; All it takes is a smartphone and an Internet connection. Financial censorship, where governments, financial institutions, or third parties close the accounts of individuals or companies and restrict their trading for specific interests. For example, if a company dares to disagree publicly about government policies, the government can silence the company by restricting its access to basic financial services. Take the bank account service, the company needs to pay employees and other expenses through the bank account, without which the company will go bankrupt. However, the Permanent Ecological decentralized financial Banks break these two problems through effective blockchain application. For example, small and medium-sized enterprises and the real economy chain transformation and chain transformation Token bond transformation, or C.D.P.S mortgage debt position smart contract to achieve the value of the long-term Ecological decentralization of financial Banks.
+Permanent Ecological去中心化金融银行旨在解决中心化服务不能解决的两个主要问题：不平等金融服务；金融审查。
+不平等金融服务，这主要是指个人能够获得贷款、抵押贷款和保险等金融服务的机会。那些难以或无法获得金融服务的人常被称为“没有银行账号的人”（“unbanked”）。去中心化金融应用旨在改善这个问题，确保人们可以无障碍地使用这些应用；所需要的只是一台智能手机和互联网连接。金融审查，为了特定利益，政府、金融机构或第三方机构会关闭个人或公司的账户并限制他们交易。例如，如果有公司敢于公开表达对政府政策的不同意见，政府可以限制这家公司获得基本的金融服务，从而使他们保持沉默。拿银行账户服务来说，公司需要通过银行账户来支付员工以及其他费用，如果没有这些服务，会导致公司的破产。而Permanent Ecological去中心化金融银行通过有效的区块链应用来打破这两个问题。例如，中小企业及实体经济链改化以及链改Token债券化，或者C.D.P.S抵押债务头寸智能合约来实现Permanent Ecological去中心化金融银行的价值。
 
-## 5.0 Permanent Ecological Summary Of Issue ###########################################################
+## 5.0 发行概述 ###########################################################
 
-The Permanent Ecological public chain issues two tokens in total, which is a dual token system. The tokens issued by the main network are PEE; The side chain issue token is PET (stable token).
+Permanent Ecological公链总共发行2款代币，是一种双代币系统。主网发行的代币为PEE；侧链发行的代币为PET（稳定代币）。
 
-### 5.1 Basic Parameters Of PEE Token
+### 5.1 PEE代币基础参数
 
-| ***Total Circulation***        | ***3,33,0000,000 PEE***                     |
+| ***总发行量***        | ***3,33,0000,000 PEE***                     |
 | :----------------------------- | :------------------------------------------ |
-| Method Of Proof Pf Interest    | ***POS is based on the Tendermint engine*** |
-| Block Out Interval             | ***6 Seconds***                             |
-| Out Of The Block Reward Amount | ***40 PEE***                                |
-| Production Cycle               | ***2635200 Blocks***                        |
-| Cuts                           | ***3%***                                    |
+| 权益证明方式    | ***POS基于Tendermint引擎*** |
+| 区块出块间隔             | ***6 Seconds***                             |
+| 出块奖励量 | ***40 PEE***                                |
+| 减产周期（块）               | ***2635200 Blocks***                        |
+| 减产幅度                          | ***3%***                                    |
 
-### 5.2 Basic Parameters Of PET Token
+### 5.2 PET代币基础参数
 
-| ***Total Circulation***        | ***56,0000,000 PET*** |
+| ***总发行量***        | ***56,0000,000 PET*** |
 | :----------------------------- | :-------------------- |
-| Block Out Interval             | ***21 Seconds***      |
-| Out Of The Block Reward Amount | ***2 PET***           |
+| 区块出块间隔           | ***21 Seconds***      |
+| 出块奖励量 | ***2 PET***           |
 
-### 5.3 Initial Allocation Information For PEE Tokens
+### 5.3 PEE代币初始分配信息
 
-PEE total circulation for a total of 3,33,0000,000 PEE, triggered by quantum content marketing, light cloud to calculate force clients to dig version 1.0, the cloud to calculate force light client version 2.0, all nodes mining and mining, technical maintenance, Ecological contribution, community maintenance, all nodes of reward and incentive mechanism, because the Permanent Ecological USES is POS mechanism, in the creation stage triggered PEE will be allocated in the center of the several sections to node, triggered by intelligent contract, and all data will be made public audit in the blocks in the browser. And it is regulated and supervised by Permanent Ecological AI.
+PEE总发行量共计3,33,0000,000 PEE，初始分配类型分为量子发生器、轻挖算力服务1.0挖矿阶段、轻挖算力服务2.0挖矿阶段、轻挖算力服务节点质押挖矿阶段、技术维护、生态贡献、社区维护、全节点奖励、激励机制。Permanent Ecological公链采用的是POS挖矿机制，在创世阶段每个类似的分配将直接映射到各个类型的超级节点中，并通过智能合约进行PEE触发，并且所有数据将在区块浏览器中对外公开审核。并且由Permanent Ecological公链智能ECO AI 进行监管监督。
 
-| ***De-Centralizing Node Properties***   | ***Allocation Proportion*** | ***Distribution Number***  |
+| ***去中心节点属性***   | ***分配比例*** | ***分配数量***  |
 | -------------------------- | ------------------ | ------------------- |
-| Quantum Trigger Content Promotion  | ***10%***      | ***333000000*** |
-| CloudHash&Light Client version 1.0 | ***10%***      | ***333000000*** |
-| CloudHash&Light Client version 2.0 | ***15%***      | ***499500000*** |
-| All The Nodes Mining               | ***25%***      | ***832500000*** |
-| Maintenance                        | ***10%***      | ***333000000*** |
-| Ecological Contribution            | ***5%***       | ***166500000*** |
-| Community Maintenance              | ***10%***      | ***333000000*** |
-| All The Nodes Reward               | ***10%***      | ***333000000*** |
-| Incentive Mechanism                | ***5%***       | ***166500000*** |
+| 量子发生器  | ***10%***      | ***333000000*** |
+| 轻挖算力服务1.0挖矿阶段 | ***10%***      | ***333000000*** |
+| 轻挖算力服务2.0挖矿阶段 | ***15%***      | ***499500000*** |
+| 轻挖算力服务节点质押挖矿阶段               | ***25%***      | ***832500000*** |
+| 技术维护                       | ***10%***      | ***333000000*** |
+| 生态贡献          | ***5%***       | ***166500000*** |
+| 社区维护              | ***10%***      | ***333000000*** |
+| 全节点奖励             | ***10%***      | ***333000000*** |
+| 激励机制             | ***5%***       | ***166500000*** |
 
-## 6.0 Permanent Ecological Disclaimer ###########################################################
+## 6.0 Permanent 免责声明 ###########################################################
 
-### 6.1 This Article Describes a Project Under Development
+### 6.1 本文介绍的为一个开发中的项目
 
-This white paper and related documents are used for the development and application of the Permanent Ecological network. For information dissemination purposes only and subject to change.
+本白皮书及其相关文档用于Permanent Ecological公链的开发和应用。仅做信息传播之用并可能更改。
 
-The Permanent Ecological network envisaged in this paper is under development and will be constantly updated, including but not limited to key governance and key technologies. The development of a test platform (software) and technology using the Permanent Ecological network or associated test platform (software) may not achieve or fully achieve the goals described in this white paper.
+本文所设想的Permanent Ecological公链在开发中，并将不断更新，这些更新包括但不限于关键治理和关键技术。 开发使用Permanent Ecological公链或与之相关的测试平台以及技术，可能无法实现或无法完全实现本白皮书所述的目标。
 
-If the Permanent Ecological is accomplished, it may not be the same as described in this article. Nothing in this article represents or warrants the success or reasonableness of any future plans, projections or prospects, and nothing in this article shall be construed as a promise or representation of the future.
+如果Permanent Ecological公链得以完成，可能与本文所述有所不同。本文不对未来的任何计划、预测或前景的成功性或者合理性做出陈述或保证，本文的任何内容都不应被视为对未来的承诺或陈述。
 
-### 6.2 Not An Offer For Regulatory Products
+### 6.2 并非监管类产品的要约
 
-Permanent Ecological does not represent any product under judicial supervision. This article does not constitute an offer or invitation to make an inquiry for any regulated product, nor does it constitute any promotion, invitation or inquiry for investment purposes. The terms of purchase are not documents providing financial services or prospectuses of any kind.
+Permanent Ecological公链不代表任何一种司法监管下的产品。本文不构成对任何受监管产品的出价要约或询价邀请，也不构成以投资为目的的促销、邀请或询价。其购买条款并非提供金融服务的文件或任何类型的招股说明书。
 
-### 6.3 Is Not Recommended
+### 6.3 并非建议
 
-This white paper does not constitute any purchase advice for PEE. Please do not rely on this white paper to make any contract or purchase decisions.
+本白皮书不构成任何对PEE的购买建议。请不要依赖本黄皮书去达成任何购买的决策。
 
-### 6.4 Risk Warning
+### 6.4 风险警告
 
-Buying PEE and participating in the Permanent Ecological network comes with great risks. Before buying a PEE, you should carefully evaluate and consider the risks.
+购买PEE并参与Permanent Ecological公链伴随着极大的风险。在购买PEE之前，您应该仔细评估并考虑风险。
 
-### 6.5 You Must Obtain All Necessary Professional Advice
+### 6.5 您必须获得所有必要的专业建议
 
-It is important that you consult with an attorney, accountant and/or tax professional, as well as other professional advisers, before deciding whether to purchase a PEE or participate in a Permanent Ecological network program.
+您有必要在决定是否购买PEE或参与Permanent Ecological公链项目之前，必须咨询律师、会计师和/或税务专业人员，以及其他专业顾问。
 
-## 7.0 Permanent Ecological Related Literature ###########################################################
+## 7.0 Permanent Ecological 相关文献 ###########################################################
 
 * BTC：[bitcoin.org/bitcoin.pdf][1]
 * ETH：[github.com/ethereum/wiki/wiki/White-Paper][2]
